@@ -1,6 +1,6 @@
-# eopf-stac-extension
+# eof-eos-stac-extension
 
-- **Title:** Earth Observation Processing Framework
+- **Title:** Framework for Earth Observation Science Missions
 - **Identifier:** <https://xxx.github.io/eof-eos-stac-extension/v0.1.0/schema.json>
 - **Field Name Prefix:** eof-eos
 - **Scope:** Item
@@ -64,3 +64,4 @@ If the tests reveal formatting problems with the examples, you can fix them with
 ```bash
 npm run format-examples
 ```
+
