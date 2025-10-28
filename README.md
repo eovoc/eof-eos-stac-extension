@@ -27,7 +27,7 @@ It is strongly recommended to use the other STAC extensions eo, view, processing
 | eof-eos:major_cycle_id       | string                                                 | Major cycle identifier.  |
 | eof-eos:mission_phase       | string                                                 | Mission phase. Example: "COMMISSIONING". |
 | eof-eos:orbit_drift_flag       | boolean                                                 | Orbit drift flag. Example: false.  |
-| eof-eos:repeat_cycle_id       | boolean                                                 | Repeat cycle identifier.  |
+| eof-eos:repeat_cycle_id       | string                                                 | Repeat cycle identifier.  |
 | eof-eos:stack_id     | string                                                 | Stack identifier. Example "BIO_S1_STA__ID_20250606T094957_20250621T095020_C_G___M___S0276_W0562_A_01_DGMWJZ". |
 
 
@@ -61,5 +61,6 @@ If the tests reveal formatting problems with the examples, you can fix them with
 ```bash
 npm run format-examples
 ```
+
 
 
