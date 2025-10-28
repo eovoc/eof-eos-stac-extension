@@ -121,21 +121,6 @@
 		  "description": "tbd",
 		  "type": "boolean"
         },
-        "eof-eos:basin_id": {          
-		  "title": "Basin identifier",
-		  "description": "tbd",
-		  "type": "string"
-        },
-         "eof-eos:swath_id": {          
-		  "title": "Swath identifier",
-		  "description": "tbd",
-		  "type": "string"
-        },
-        "eof-eos:acquisition_station": {          
-		  "title": "Acquisition station",
-		  "description": "tbd",
-		  "type": "string"
-        },
 		"eof-eos:stack_id": {          
 		  "title": "Stack identifier",
 		  "description": "tbd",
