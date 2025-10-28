@@ -22,16 +22,13 @@ It is strongly recommended to use the other STAC extensions eo, view, processing
 
 | Field Name               | Type                                                   | Description                      |
 | ------------------------ | ------------------------------------------------------ | -------------------------------- |
-| eof-eos:acquisition_station    | string                                     | TBD |
-| eof-eos:basin_id       | string                                                  | TBD. Example: S2A_OPER_MSI_L2A_DS_2APS_20240308T143352_S20240308T101546_N05.10 |
-| eof-eos:global_coverage_id       | string                                                  | TBD. |
-| eof-eos:is_coregistration_primary     | boolean                                               | TBD                             |
-| eof-eos:major_cycle_id       | string                                                 | TBD.  |
-| eof-eos:mission_phase       | string                                                 | TBD.  |
-| eof-eos:orbit_drift_flag       | boolean                                                 | TBD.  |
-| eof-eos:repeat_cycle_id       | boolean                                                 | TBD.  |
-| eof-eos:stack_id     | string                                                 | TBD |
-| eof-eos:swath_id        | string                                                  | TBD    |
+| eof-eos:global_coverage_id       | string                                                  | Global coverage identifier.  |
+| eof-eos:is_coregistration_primary     | boolean                                               | Is coregistration primary. Example: true.     |
+| eof-eos:major_cycle_id       | string                                                 | Major cycle identifier.  |
+| eof-eos:mission_phase       | string                                                 | Mission phase. Example: "COMMISSIONING". |
+| eof-eos:orbit_drift_flag       | boolean                                                 | Orbit drift flag. Example: false.  |
+| eof-eos:repeat_cycle_id       | boolean                                                 | Repeat cycle identifier.  |
+| eof-eos:stack_id     | string                                                 | Stack identifier. Example "BIO_S1_STA__ID_20250606T094957_20250621T095020_C_G___M___S0276_W0562_A_01_DGMWJZ". |
 
 
 ## Contributing
@@ -64,4 +61,5 @@ If the tests reveal formatting problems with the examples, you can fix them with
 ```bash
 npm run format-examples
 ```
+
 
