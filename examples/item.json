@@ -518,6 +518,7 @@
 		"https://stac-extensions.github.io/projection/v2.0.0/schema.json",
 		"https://stac-extensions.github.io/processing/v1.2.0/schema.json",
 		"https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+		"https://eovoc.github.io/eof-eos-stac-extension/v0.1.0/schema.json",
 		"https://stac-extensions.github.io/sar/v1.0.0/schema.json",
 		"https://stac-extensions.github.io/sat/v1.0.0/schema.json",
 		"https://stac-extensions.github.io/grid/v1.1.0/schema.json",
@@ -578,4 +579,5 @@
 		"sat:absolute_orbit": 552,
 		"product:acquisition_type": "nominal"
 	}
+
 }
