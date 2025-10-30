@@ -1,0 +1,581 @@
+{
+	"stac_version": "1.0.0",
+	"assets": {
+		"enclosure_bio_common_types_xsd": {
+			"file:local_path": "bio-common-types.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-common-types.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-common-types.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-common-types.xsd",
+			"file:size": 35562
+		},
+		"quicklook_1": {
+			"roles": [
+				"overview"
+			],
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/preview/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_map.kml",
+			"type": "application/vnd.google-earth.kml+xml",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_map.kml"
+		},
+		"enclosure_overlay_support_xsd": {
+			"file:local_path": "bio-l1-overlay-support.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1-overlay-support.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1-overlay-support.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-l1-overlay-support.xsd",
+			"file:size": 472
+		},
+		"thumbnail": {
+			"roles": [
+				"thumbnail"
+			],
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/public/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D.BI.JPG",
+			"type": "image/jpeg",
+			"title": "BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D.BI.JPG"
+		},
+		"enclosure_overlay_xsd": {
+			"file:local_path": "bio-l1-overlay.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1-overlay.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1-overlay.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-l1-overlay.xsd",
+			"file:size": 9213
+		},
+		"enclosure_orb_xml_2": {
+			"file:local_path": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+			"file:size": 21184
+		},
+		"product": {
+			"file:local_path": "BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D.ZIP",
+			"alternate:name": "HTTPS",
+			"roles": [
+				"data",
+				"metadata",
+				"archive"
+			],
+			"href": "https://catalog.maap.eo.esa.int/data/zipper/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D",
+			"auth:refs": [
+				"oidc"
+			],
+			"published": "2025-06-05T23:21:32.666Z",
+			"title": "Zipped product",
+			"type": "application/zip"
+		},
+		"enclosure_annot_xml_2": {
+			"file:local_path": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+			"file:size": 93841
+		},
+		"enclosure_orb_xml_1": {
+			"file:local_path": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_primary/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_primary/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_orb.xml",
+			"file:size": 21184
+		},
+		"enclosure_annot_xml_1": {
+			"file:local_path": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_primary/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_primary/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_annot.xml",
+			"file:size": 85581
+		},
+		"metadata_iso_19139": {
+			"roles": [
+				"metadata"
+			],
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC/items/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D?httpAccept=application/vnd.iso.19139%2Bxml",
+			"title": "ISO 19139 metadata",
+			"type": "application/vnd.iso.19139+xml"
+		},
+		"enclosure_att_xml_2": {
+			"file:local_path": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+			"file:size": 10942
+		},
+		"enclosure_att_xml_1": {
+			"file:local_path": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_primary/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_primary/navigation/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_att.xml",
+			"file:size": 10942
+		},
+		"enclosure_lut_nc": {
+			"file:local_path": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_lut.nc",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_lut.nc",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/annotation_coregistered/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_lut.nc",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "application/x-netcdf",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_lut.nc",
+			"file:size": 37337855
+		},
+		"enclosure_bio_aux_orbit_xsd": {
+			"file:local_path": "bio-aux-orbit.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-aux-orbit.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-aux-orbit.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-aux-orbit.xsd",
+			"file:size": 7190
+		},
+		"enclosure_annotations_xsd": {
+			"file:local_path": "bio-l1-annotations.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1-annotations.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1-annotations.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-l1-annotations.xsd",
+			"file:size": 72947
+		},
+		"metadata_ogc_10_157r4": {
+			"roles": [
+				"metadata"
+			],
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC/items/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D?httpAccept=application/gml%2Bxml&recordSchema=om",
+			"title": "OGC 10-157r4 metadata",
+			"type": "application/gml+xml;profile=\"http://www.opengis.net/spec/EOMPOM/1.1\""
+		},
+		"metadata_ogc_17_003r2": {
+			"roles": [
+				"metadata"
+			],
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC/items/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D?mode=owc",
+			"title": "OGC 17-003r2 metadata",
+			"type": "application/geo+json;profile=\"http://www.opengis.net/spec/eo-geojson/1.0\""
+		},
+		"enclosure_bio_aux_attitude_xsd": {
+			"file:local_path": "bio-aux-attitude.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-aux-attitude.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-aux-attitude.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-aux-attitude.xsd",
+			"file:size": 7462
+		},
+		"enclosure_ab_main_annotation_xsd": {
+			"file:local_path": "bio-l1ab-main-annotation.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1ab-main-annotation.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1ab-main-annotation.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-l1ab-main-annotation.xsd",
+			"file:size": 4776
+		},
+		"enclosure_c_main_annotation_xsd": {
+			"file:local_path": "bio-l1c-main-annotation.xsd",
+			"alternate:name": "HTTPS",
+			"created": "2025-10-17T09:29:37Z",
+			"roles": [
+				"data"
+			],
+			"alternate": {
+				"s3": {
+					"alternate:name": "S3",
+					"href": "s3://biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1c-main-annotation.xsd",
+					"auth:refs": [
+						"s3"
+					]
+				}
+			},
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/schema/bio-l1c-main-annotation.xsd",
+			"auth:refs": [
+				"oidc"
+			],
+			"type": "text/xml",
+			"title": "bio-l1c-main-annotation.xsd",
+			"file:size": 24506
+		},
+		"quicklook": {
+			"roles": [
+				"overview"
+			],
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/public/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_ql.png",
+			"type": "image/png",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_ql.png"
+		}
+	},
+	"bbox": [
+		-79.31407,
+		-8.731073,
+		-78.475876,
+		-7.410489
+	],
+	"geometry": {
+		"coordinates": [
+			[
+				[
+					-79.31407,
+					-8.618666
+				],
+				[
+					-78.7634,
+					-8.731073
+				],
+				[
+					-78.475876,
+					-7.518402
+				],
+				[
+					-79.001274,
+					-7.410489
+				],
+				[
+					-79.31407,
+					-8.618666
+				]
+			]
+		],
+		"type": "Polygon"
+	},
+	"links": [
+		{
+			"rel": "self",
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC/items/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D?httpAccept=application/geo%2Bjson;profile=https://stacspec.org",
+			"type": "application/geo+json;profile=\"https://stacspec.org\""
+		},
+		{
+			"rel": "collection",
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC",
+			"type": "application/json",
+			"title": "BiomassLevel1cIOC"
+		},
+		{
+			"rel": "parent",
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC",
+			"type": "application/json",
+			"title": "BiomassLevel1cIOC"
+		},
+		{
+			"rel": "root",
+			"href": "https://catalog.maap.eo.esa.int/catalogue/",
+			"type": "application/json",
+			"title": "MAAP Catalogue"
+		},
+		{
+			"rel": "via",
+			"href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel1cIOC/2025/06/05/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D/bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_01_dgn11d.xml",
+			"type": "application/gml+xml;profile=\\\"http://www.opengis.net/spec/EOMPOM/1.1\\\"",
+			"title": "bio_s1_sta__1m_20250605t232112_20250605t232132_c_g___m___c___t____f162_01_dgn11d.xml"
+		},
+		{
+			"rel": "alternate",
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC/items/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D?httpAccept=application/ld%2Bjson",
+			"type": "application/ld+json",
+			"title": "JSON-LD metadata"
+		},
+		{
+			"rel": "alternate",
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC/items/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D?httpAccept=application/ld%2Bjson;profile=https://schema.org",
+			"type": "application/ld+json;profile=\"https://schema.org\"",
+			"title": "JSON-LD (schema.org) metadata"
+		},
+		{
+			"rel": "alternate",
+			"href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel1cIOC/items/BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D?httpAccept=application/ld%2Bjson;profile=http://data.europa.eu/930/",
+			"type": "application/ld+json;profile=\"http://data.europa.eu/930/\"",
+			"title": "JSON-LD (GeoDCAT-AP) metadata"
+		}
+	],
+	"id": "BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D",
+	"collection": "BiomassLevel1cIOC",
+	"type": "Feature",
+	"stac_extensions": [
+		"https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+		"https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/file/v2.1.0/schema.json",
+		"https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+		"https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+		"https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+		"https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+		"https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+		"https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/product/v0.1.0/schema.json",
+		"https://stac-extensions.github.io/timestamps/v1.1.0/schema.json"
+	],
+	"properties": {
+		"eof-eos:orbit_drift_flag": false,
+		"start_datetime": "2025-06-05T23:21:12.608Z",
+		"end_datetime": "2025-06-05T23:21:32.666Z",
+		"processing:facility": "Biomass CPF",
+		"eof-eos:repeat_cycle_id": "NA",
+		"product:type": "S1_STA__1M",
+		"sat:anx_datetime": "2025-06-05T22:30:17.677Z",
+		"title": "BIO_S1_STA__1M_20250605T232112_20250605T232132_C_G___M___C___T____F162_01_DGN11D",
+		"eof-eos:stack_id": "BIO_S1_STA__ID_20250605T232112_20250620T232134_C_G___M___S0081_W0789_D_01_DGMZIM",
+		"platform": "Biomass",
+		"eof-eos:major_cycle_id": "NA",
+		"datetime": "2025-06-05T23:21:12.608Z",
+		"instruments": [
+			"P-SAR"
+		],
+		"constellation": "Biomass",
+		"sat:orbit_state": "descending",
+		"eof-eos:is_coregistration_primary": true,
+		"eopf:datatake_id": "4525027",
+		"processing:software": {
+			"Biomass Stack Processor": "4.1.0"
+		},
+		"eopf:instrument_configuration_id": 0,
+		"eof-eos:mission_phase": "COMMISSIONING",
+		"grid:code": "WRS-0-162",
+		"processing:level": "L1C",
+		"proj:code": "EPSG:4326",
+		"created": "2025-10-17T09:29:37Z",
+		"eof-eos:global_coverage_id": "NA",
+		"published": "2025-10-20T09:54:34.929Z",
+		"version": "01",
+		"sar:observation_direction": "left",
+		"sar:polarizations": [
+			"HH",
+			"HV",
+			"VH",
+			"VV"
+		],
+		"auth:schemes": {
+			"s3": {
+				"type": "s3"
+			},
+			"oidc": {
+				"openIdConnectUrl": "https://iam.ascend.icsgate.eu/realms/esa-maap/.well-known/openid-configuration",
+				"type": "openIdConnect"
+			}
+		},
+		"sar:instrument_mode": "SM",
+		"processing:datetime": "2025-10-17T09:29:37Z",
+		"updated": "2025-10-21T07:20:48Z",
+		"sat:absolute_orbit": 552,
+		"product:acquisition_type": "nominal"
+	}
+}
