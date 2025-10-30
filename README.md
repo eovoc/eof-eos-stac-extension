@@ -16,7 +16,12 @@ See the EOF-EOS Web site for context.
 
 It is strongly recommended to use the other STAC extensions eo, view, processing, sat and sci with the eof-eos extension.
 
-## Item Properties or Asset Fields
+- Examples:
+  - [Item example](examples/item.json)
+- [JSON Schema](json-schema/schema.json)
+- [Changelog](./CHANGELOG.md)
+
+## Item Properties
 
 
 
@@ -61,6 +66,7 @@ If the tests reveal formatting problems with the examples, you can fix them with
 ```bash
 npm run format-examples
 ```
+
 
 
 
