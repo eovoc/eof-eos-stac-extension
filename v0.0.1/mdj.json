@@ -1095,7 +1095,7 @@
         "dataQualityInfo": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/dqc.json#DataQuality"
+            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/dqc.json#/definitions/DataQuality"
           },
           "uniqueItems": true
         },
