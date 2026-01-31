@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json",
+  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#",
   "definitions": {
     "Abstract_ConstraintUnion": {
       "$anchor": "Abstract_ConstraintUnion",
