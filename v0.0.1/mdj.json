@@ -1165,7 +1165,7 @@
       "type": "object",
       "properties": {
         "resourceScope": {
-          "$ref": "#MD_ScopeCode"
+          "$ref": "#/definitions/MD_ScopeCode"
         },
         "name": {
           "type": "string"
@@ -1230,7 +1230,7 @@
       "type": "object",
       "properties": {
         "level": {
-          "$ref": "#MD_ScopeCode"
+          "$ref": "#/definitions/MD_ScopeCode"
         },
         "extent": {
           "type": "array",
