@@ -18,7 +18,7 @@
   "title": "novasar_l2ard_hh_hv",
   "license": "various",
 
-  	"liability::quality": [
+  	"liability:quality": 
 {
                 "scope": {
                     "level": "series"
@@ -48,7 +48,7 @@
             }
         
 
-    ],
+    ,
 
   "assets": {
     "metadata_ogc_17_069r3": {

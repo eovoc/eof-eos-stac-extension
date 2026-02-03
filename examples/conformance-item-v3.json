@@ -90,7 +90,7 @@
 
        "liability:responsible_party": "seems to be mandatory",
        
-	"liability::quality": [{
+	"liability:quality": {
             "scope": {"level": "dataset"},
             "report": [
                 {
@@ -137,6 +137,6 @@
                     "type": "FormatConsistency"
                 }
             ]
-        }]
+        }
   }
 }
