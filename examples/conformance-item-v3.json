@@ -1,0 +1,142 @@
+{
+  "stac_version": "1.0.0",
+  "assets": {
+    "thumbnail": {
+      "roles": ["thumbnail"],
+      "href": "http://tpm-ds.eo.esa.int/oads/meta/PROBA1-HRC/thumbnail/PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001.SIP.ZIP_TIMG.jpg",
+      "type": "image/jpeg",
+      "title": "THUMBNAIL"
+    },
+    "quicklook": {
+      "roles": ["overview"],
+      "href": "http://tpm-ds.eo.esa.int/oads/meta/PROBA1-HRC/browse/PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001.SIP.ZIP_BID.PNG",
+      "type": "image/png",
+      "title": "QUICKLOOK"
+    }
+  },
+  "bbox": [
+    140.98,
+    37.37,
+    141.05,
+    37.41
+  ],
+  "geometry": {
+    "coordinates": [[
+      [
+        141.05,
+        37.37
+      ],
+      [
+        141.05,
+        37.41
+      ],
+      [
+        140.98,
+        37.41
+      ],
+      [
+        140.98,
+        37.37
+      ],
+      [
+        141.05,
+        37.37
+      ]
+    ]],
+    "type": "Polygon"
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://emc.spacebel.be/collections/PROBA.HRC.1A/items/PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001?httpAccept=application/geo%2Bjson;profile=https://stacspec.org",
+      "type": "application/geo+json;profile=\"https://stacspec.org\""
+    },
+    {
+      "rel": "collection",
+      "href": "https://emc.spacebel.be/collections/PROBA.HRC.1A",
+      "type": "application/json",
+      "title": "PROBA.HRC.1A"
+    },
+    {
+      "rel": "parent",
+      "href": "https://emc.spacebel.be/collections/PROBA.HRC.1A",
+      "type": "application/json",
+      "title": "PROBA.HRC.1A"
+    }
+  ],
+  "id": "PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001",
+  "collection": "PROBA.HRC.1A",
+  "type": "Feature",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.3.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+	  "https://luciocola.github.io/stac-extension-liability-claims/v1.3.0/schema.json"
+  ],
+  "properties": {
+
+    "datetime": "2016-02-04T06:09:57Z",
+    "sar:instrument_mode": "DEFAULT",
+    "instruments": ["HRC"],
+    "constellation": "PROBA-1",
+    "start_datetime": "2016-02-04T06:09:57Z",
+    "end_datetime": "2016-02-04T06:09:57Z",
+    "product:type": "HRC_HRC_1P",
+    "title": "PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001",
+    "updated": "2024-04-30T11:28:07Z",
+    "product:acquisition_type": "nominal",
+    "platform": "PROBA-1",
+
+       "liability:responsible_party": "seems to be mandatory",
+       
+	"liability::quality": [{
+            "scope": {"level": "dataset"},
+            "report": [
+                {
+                    "result": [{
+                        "type": "QuantitativeResult",
+                        "value": ["true"]
+                    }],
+                    "measure": {
+                        "measureIdentification": {
+                            "code": "101",
+                            "authority": {
+                                "alternateTitle": ["ISO"],
+                                "title": "International Organization for Standardization"
+                            },
+                            "codeSpace": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/"
+                        },
+                        "measureDescription": "The measure will take the value true if all the requirements in the referred data product specification are fulfilled.",
+                        "nameOfMeasure": ["MD101"]
+                    },
+                    "type": "ConceptualConsistency"
+                },
+                {
+                    "result": [{
+                        "valueUnit": "%",
+                        "type": "QuantitativeResult",
+                        "value": [0]
+                    }],
+                    "measure": {
+                        "measureIdentification": {
+                            "code": "211",
+                            "authority": {
+                                "alternateTitle": ["ISO"],
+                                "title": "International Organization for Standardization"
+                            },
+                            "codeSpace": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/"
+                        },
+                        "measureDescription": "Quality degradation - rate of imperfect coverage.",
+                        "nameOfMeasure": ["MD211"]
+                    },
+                    "evaluationMethod": [{
+                        "type": "FullInspection",
+                        "evaluationMethodDescription": "Automatic quality degradation check."
+                    }],
+                    "type": "FormatConsistency"
+                }
+            ]
+        }]
+  }
+}

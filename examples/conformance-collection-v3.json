@@ -1,0 +1,209 @@
+{
+  "extent": {
+    "spatial": {"bbox": [[
+      -62.87262834116111,
+      -55.94470669421993,
+      173.246741777445,
+      38.42053289934906
+    ]]},
+    "temporal": {"interval": [[
+      "2019-11-02T00:00:00.000Z",
+      "2025-10-08T23:59:59.999Z"
+    ]]}
+  },
+  "stac_version": "1.0.0",
+  "created": "2025-10-20T00:00:00.00Z",
+  "description": "NovaSAR-1 CEOS-ARD (level 2) HH,HV polarizations",
+  "type": "Collection",
+  "title": "novasar_l2ard_hh_hv",
+  "license": "various",
+
+  	"liability::quality": [
+{
+                "scope": {
+                    "level": "series"
+                },
+                "report": [{
+                        "result": [{
+                                "pass": true,
+                                "specification": {
+                                    "date": {
+                                        "publication": "2021-10-14"
+                                    },
+                                    "identifier": [{
+                                            "code": "https://ceos.org/ard/files/PFS/SR/v5.0.1",
+                                            "codeSpace": "tbd"
+                                        }
+                                    ],
+                                    "edition": "5.0",
+                                    "title": "CEOS-ARD Product Family Specification: Surface Reflectance"
+                                },
+                                "type": "ConformanceResult",
+                                "explanation": "See the referenced specification"
+                            }
+                        ],                
+                        "type": "Commission"
+                    }
+                ]
+            }
+        
+
+    ],
+
+  "assets": {
+    "metadata_ogc_17_069r3": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv",
+      "type": "application/geo+json;profile=\"http://www.opengis.net/spec/ogcapi-features-1/1.0\"",
+      "title": "OGC 17-069r3 metadata"
+    },
+    "metadata_iso_19115_4": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/vnd.iso.19115-4%2Bjson",
+      "title": "ISO19115-4",
+      "type": "application/vnd.iso.19115-4+json"
+    },
+    "metadata_iso_19139": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/vnd.iso.19139%2Bxml",
+      "title": "ISO 19139 metadata",
+      "type": "application/vnd.iso.19139+xml"
+    },
+    "metadata_iso_19139_2": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/vnd.iso.19139-2%2Bxml",
+      "title": "ISO 19139-2 metadata",
+      "type": "application/vnd.iso.19139-2+xml"
+    },
+    "metadata_dif_10": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/dif10%2Bxml",
+      "title": "DIF-10 metadata",
+      "type": "application/dif10+xml"
+    },
+    "metadata_iso_19115_3": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/vnd.iso.19115-3%2Bxml",
+      "title": "ISO 19115-3 metadata",
+      "type": "application/vnd.iso.19115-3+xml"
+    },
+    "metadata_ogc_17_084r1": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?mode=owc",
+      "title": "OGC 17-084r1 metadata",
+      "type": "application/geo+json;profile=\"http://www.opengis.net/spec/eoc-geojson/1.0\""
+    },
+    "metadata_html": {
+      "roles": ["metadata"],
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=text/html",
+      "title": "HTML",
+      "type": "text/html"
+    },
+    "quicklook": {
+      "roles": ["overview"],
+      "href": "https://eo-data.csiro.au/projects/easi-thumbnails/novasar_l2ard_hh_hv/2019/11/CEOS-ARD_NRB_v5_5_NovaSAR_01_7940_scd_29_191102_023255_HH_HV_A_R-ql.png",
+      "type": "image/png",
+      "title": "graphic overview"
+    }
+  },
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv",
+      "type": "application/json",
+      "title": "novasar_l2ard_hh_hv"
+    },
+    {
+      "rel": "self",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "https://emc.spacebel.be",
+      "type": "application/json",
+      "title": "FedEO Clearinghouse"
+    },
+    {
+      "rel": "parent",
+      "href": "https://emc.spacebel.be",
+      "title": "collections",
+      "type": "application/json"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/atom%2Bxml",
+      "type": "application/atom+xml",
+      "title": "Atom format"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/xml",
+      "type": "application/xml",
+      "title": "Dublin Core metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/json",
+      "type": "application/json",
+      "title": "STAC metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/ld%2Bjson;profile=https://schema.org",
+      "type": "application/ld+json;profile=\"https://schema.org\"",
+      "title": "JSON-LD (schema.org) metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/ld%2Bjson;profile=http://data.europa.eu/930/",
+      "type": "application/ld+json;profile=\"http://data.europa.eu/930/\"",
+      "title": "JSON-LD (GeoDCAT-AP) metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/rdf%2Bxml;profile=https://schema.org",
+      "type": "application/rdf+xml;profile=\"https://schema.org\"",
+      "title": "RDF/XML (schema.org) metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=application/rdf%2Bxml;profile=http://data.europa.eu/930/",
+      "type": "application/rdf+xml;profile=\"http://data.europa.eu/930/\"",
+      "title": "RDF/XML (GeoDCAT-AP) metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=text/turtle;profile=https://schema.org",
+      "type": "text/turtle;profile=\"https://schema.org\"",
+      "title": "Turtle (schema.org) metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://emc.spacebel.be/collections/novasar_l2ard_hh_hv?httpAccept=text/turtle;profile=http://data.europa.eu/930/",
+      "type": "text/turtle;profile=\"http://data.europa.eu/930/\"",
+      "title": "Turtle (GeoDCAT-AP) metadata"
+    },
+    {
+      "rel": "related",
+      "href": "https://emc.spacebel.be/series/eo:organisationName/CSIRO",
+      "title": "More collections for CSIRO"
+    }
+  ],
+  "id": "novasar_l2ard_hh_hv",
+  "stac_extensions": ["https://stac-extensions.github.io/processing/v1.2.0/schema.json", "https://luciocola.github.io/stac-extension-liability-claims/v1.3.0/schema.json"],
+  "updated": "2025-10-20T00:00:00.00Z",
+  "providers": [
+    {
+      "roles": ["producer"],
+      "name": "CSIRO",
+      "url": "www.csiro.au"
+    },
+    {
+      "roles": ["host"],
+      "name": "FedEO Clearinghouse",
+      "url": "https://emc.spacebel.be/readme.html"
+    }
+  ],
+  "summaries": {"processing:lineage": ["No info available."]}
+}
