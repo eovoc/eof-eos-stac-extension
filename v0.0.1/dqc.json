@@ -1,7 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/dqc.json#",
-  "definitions": {
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/; edited by hand",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.isotc211.org/json/19157/-1/dqc/1.0.0/dqc.json",
+  "$defs": {
     "AbsolutePositionalAccuracy": {
       "$anchor": "AbsolutePositionalAccuracy",
       "type": "object",
@@ -10,26 +11,26 @@
           "const": "AbsolutePositionalAccuracy"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -47,26 +48,26 @@
           "const": "AccuracyOfATimeMeasurement"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -90,22 +91,22 @@
           "type": "string"
         },
         "evaluationMethodType": {
-          "$ref": "#/definitions/EvaluationMethodTypeCode"
+          "$ref": "#EvaluationMethodTypeCode"
         },
         "evaluationProcedure": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
         },
         "dateTime": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
           },
           "uniqueItems": true
         },
         "referenceDoc": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
           },
           "uniqueItems": true
         },
@@ -128,7 +129,7 @@
           "type": "string"
         },
         "example": {
-          "$ref": "#/definitions/MeasureDescription"
+          "$ref": "#MeasureDescription"
         },
         "valueType": {"type":"string"}
       },
@@ -146,26 +147,26 @@
           "const": "Commission"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -179,10 +180,10 @@
       "$anchor": "CompletenessUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/Commission"
+          "$ref": "#Commission"
         },
         {
-          "$ref": "#/definitions/Omission"
+          "$ref": "#Omission"
         }
       ]
     },
@@ -194,26 +195,26 @@
           "const": "ConceptualConsistency"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -231,31 +232,31 @@
           "const": "Confidence"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         },
         "relatedQualityElement": {
-          "$ref": "#/definitions/QualityElementUnion"
+          "$ref": "#QualityElementUnion"
         }
       },
       "required": [
@@ -271,16 +272,16 @@
           "const": "ConformanceResult"
         },
         "dateTime": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
         },
         "resultScope": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_Scope"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_Scope"
         },
         "pass": {
           "type": "boolean"
         },
         "specification": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
         },
         "explanation": {
           "type": "string"
@@ -300,13 +301,13 @@
           "const": "CoverageResult"
         },
         "dateTime": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
         },
         "resultScope": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_Scope"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_Scope"
         },
         "spatialRepresentationType": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_SpatialRepresentationTypeCode"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_SpatialRepresentationTypeCode"
         }
       },
       "required": [
@@ -318,13 +319,13 @@
       "$anchor": "DataEvaluationUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/FullInspection"
+          "$ref": "#FullInspection"
         },
         {
-          "$ref": "#/definitions/IndirectEvaluation"
+          "$ref": "#IndirectEvaluation"
         },
         {
-          "$ref": "#/definitions/SampleBasedInspection"
+          "$ref": "#SampleBasedInspection"
         }
       ]
     },
@@ -333,17 +334,17 @@
       "type": "object",
       "properties": {
         "scope": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_Scope"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_Scope"
         },
         "report": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "qualityEvaluationReport": {
-          "$ref": "#/definitions/QualityEvaluationReportInformation"
+          "$ref": "#QualityEvaluationReportInformation"
         }
       },
       "required": [
@@ -358,10 +359,10 @@
           "const": "DescriptiveResult"
         },
         "dateTime": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
         },
         "resultScope": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_Scope"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_Scope"
         },
         "statement": {
           "type": "string"
@@ -380,26 +381,26 @@
           "const": "DomainConsistency"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -417,16 +418,16 @@
       "$anchor": "EvaluationMethodUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/AggregationDerivation"
+          "$ref": "#AggregationDerivation"
         },
         {
-          "$ref": "#/definitions/FullInspection"
+          "$ref": "#FullInspection"
         },
         {
-          "$ref": "#/definitions/IndirectEvaluation"
+          "$ref": "#IndirectEvaluation"
         },
         {
-          "$ref": "#/definitions/SampleBasedInspection"
+          "$ref": "#SampleBasedInspection"
         }
       ]
     },
@@ -438,26 +439,26 @@
           "const": "FormatConsistency"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -479,7 +480,7 @@
           "type": "string"
         },
         "language": {
-          "$ref": "#/definitions/FormulaLanguage"
+          "$ref": "#FormulaLanguage"
         },
         "languageVersion": {
           "type": "string"
@@ -509,22 +510,22 @@
           "type": "string"
         },
         "evaluationMethodType": {
-          "$ref": "#/definitions/EvaluationMethodTypeCode"
+          "$ref": "#EvaluationMethodTypeCode"
         },
         "evaluationProcedure": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
         },
         "dateTime": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
           },
           "uniqueItems": true
         },
         "referenceDoc": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
           },
           "uniqueItems": true
         },
@@ -544,26 +545,26 @@
           "const": "GriddedDataPositionalAccuracy"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -581,31 +582,31 @@
           "const": "Homogeneity"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         },
         "relatedQualityElement": {
-          "$ref": "#/definitions/QualityElementUnion"
+          "$ref": "#QualityElementUnion"
         }
       },
       "required": [
@@ -627,22 +628,22 @@
           "type": "string"
         },
         "evaluationMethodType": {
-          "$ref": "#/definitions/EvaluationMethodTypeCode"
+          "$ref": "#EvaluationMethodTypeCode"
         },
         "evaluationProcedure": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
         },
         "dateTime": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
           },
           "uniqueItems": true
         },
         "referenceDoc": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
           },
           "uniqueItems": true
         },
@@ -658,16 +659,16 @@
       "$anchor": "LogicalConsistencyUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/ConceptualConsistency"
+          "$ref": "#ConceptualConsistency"
         },
         {
-          "$ref": "#/definitions/DomainConsistency"
+          "$ref": "#DomainConsistency"
         },
         {
-          "$ref": "#/definitions/FormatConsistency"
+          "$ref": "#FormatConsistency"
         },
         {
-          "$ref": "#/definitions/TopologicalConsistency"
+          "$ref": "#TopologicalConsistency"
         }
       ]
     },
@@ -681,7 +682,7 @@
         "formula": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/FormulaType"
+            "$ref": "#FormulaType"
           },
           "uniqueItems": true
         }
@@ -701,11 +702,11 @@
           "type": "string"
         },
         "description": {
-          "$ref": "#/definitions/MeasureDescription"
+          "$ref": "#MeasureDescription"
         },
         "valueType": {"type":"string"},
         "valueStructure": {
-          "$ref": "#/definitions/ValueStructure"
+          "$ref": "#ValueStructure"
         }
       },
       "required": [
@@ -719,7 +720,7 @@
       "type": "object",
       "properties": {
         "measureIdentification": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_Identifier"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_Identifier"
         },
         "nameOfMeasure": {
           "type": "array",
@@ -750,13 +751,13 @@
       "$anchor": "MetaqualityUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/Confidence"
+          "$ref": "#Confidence"
         },
         {
-          "$ref": "#/definitions/Homogeneity"
+          "$ref": "#Homogeneity"
         },
         {
-          "$ref": "#/definitions/Representativity"
+          "$ref": "#Representativity"
         }
       ]
     },
@@ -768,26 +769,26 @@
           "const": "NonQuantitativeAttributeCorrectness"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -805,26 +806,26 @@
           "const": "Omission"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -838,13 +839,13 @@
       "$anchor": "PositionalAccuracyUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/AbsolutePositionalAccuracy"
+          "$ref": "#AbsolutePositionalAccuracy"
         },
         {
-          "$ref": "#/definitions/GriddedDataPositionalAccuracy"
+          "$ref": "#GriddedDataPositionalAccuracy"
         },
         {
-          "$ref": "#/definitions/RelativePositionalAccuracy"
+          "$ref": "#RelativePositionalAccuracy"
         }
       ]
     },
@@ -852,58 +853,58 @@
       "$anchor": "QualityElementUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/AbsolutePositionalAccuracy"
+          "$ref": "#AbsolutePositionalAccuracy"
         },
         {
-          "$ref": "#/definitions/AccuracyOfATimeMeasurement"
+          "$ref": "#AccuracyOfATimeMeasurement"
         },
         {
-          "$ref": "#/definitions/Commission"
+          "$ref": "#Commission"
         },
         {
-          "$ref": "#/definitions/ConceptualConsistency"
+          "$ref": "#ConceptualConsistency"
         },
         {
-          "$ref": "#/definitions/Confidence"
+          "$ref": "#Confidence"
         },
         {
-          "$ref": "#/definitions/DomainConsistency"
+          "$ref": "#DomainConsistency"
         },
         {
-          "$ref": "#/definitions/FormatConsistency"
+          "$ref": "#FormatConsistency"
         },
         {
-          "$ref": "#/definitions/GriddedDataPositionalAccuracy"
+          "$ref": "#GriddedDataPositionalAccuracy"
         },
         {
-          "$ref": "#/definitions/Homogeneity"
+          "$ref": "#Homogeneity"
         },
         {
-          "$ref": "#/definitions/NonQuantitativeAttributeCorrectness"
+          "$ref": "#NonQuantitativeAttributeCorrectness"
         },
         {
-          "$ref": "#/definitions/Omission"
+          "$ref": "#Omission"
         },
         {
-          "$ref": "#/definitions/QuantitativeAttributeAccuracy"
+          "$ref": "#QuantitativeAttributeAccuracy"
         },
         {
-          "$ref": "#/definitions/RelativePositionalAccuracy"
+          "$ref": "#RelativePositionalAccuracy"
         },
         {
-          "$ref": "#/definitions/Representativity"
+          "$ref": "#Representativity"
         },
         {
-          "$ref": "#/definitions/TemporalConsistency"
+          "$ref": "#TemporalConsistency"
         },
         {
-          "$ref": "#/definitions/TemporalValidity"
+          "$ref": "#TemporalValidity"
         },
         {
-          "$ref": "#/definitions/ThematicClassificationCorrectness"
+          "$ref": "#ThematicClassificationCorrectness"
         },
         {
-          "$ref": "#/definitions/TopologicalConsistency"
+          "$ref": "#TopologicalConsistency"
         }
       ]
     },
@@ -912,7 +913,7 @@
       "type": "object",
       "properties": {
         "reportReference": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
         },
         "abstract": {
           "type": "string"
@@ -923,7 +924,7 @@
         "elementReport": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         }
@@ -941,7 +942,7 @@
           "const": "QualityMeasure"
         },
         "measureIdentifier": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_Identifier"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_Identifier"
         },
         "name": {
           "type": "string"
@@ -966,35 +967,35 @@
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "#/definitions/MeasureDescription"
+            "$ref": "#MeasureDescription"
           },
           "uniqueItems": true
         },
         "valueType": {},
         "valueStructure": {
-          "$ref": "#/definitions/ValueStructure"
+          "$ref": "#ValueStructure"
         },
         "example": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/MeasureDescription"
+            "$ref": "#MeasureDescription"
           },
           "uniqueItems": true
         },
         "basicMeasure": {
-          "$ref": "#/definitions/BasicMeasure"
+          "$ref": "#BasicMeasure"
         },
         "sourceReference": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/SourceReference"
+            "$ref": "#SourceReference"
           },
           "uniqueItems": true
         },
         "parameter": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/MeasureParameter"
+            "$ref": "#MeasureParameter"
           },
           "uniqueItems": true
         }
@@ -1013,16 +1014,16 @@
       "$anchor": "QualityResultUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/ConformanceResult"
+          "$ref": "#ConformanceResult"
         },
         {
-          "$ref": "#/definitions/CoverageResult"
+          "$ref": "#CoverageResult"
         },
         {
-          "$ref": "#/definitions/DescriptiveResult"
+          "$ref": "#DescriptiveResult"
         },
         {
-          "$ref": "#/definitions/QuantitativeResult"
+          "$ref": "#QuantitativeResult"
         }
       ]
     },
@@ -1034,26 +1035,26 @@
           "const": "QuantitativeAttributeAccuracy"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -1071,10 +1072,10 @@
           "const": "QuantitativeResult"
         },
         "dateTime": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
         },
         "resultScope": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_Scope"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#MD_Scope"
         },
         "value": {
           "type": "array",
@@ -1098,26 +1099,26 @@
           "const": "RelativePositionalAccuracy"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -1135,31 +1136,31 @@
           "const": "Representativity"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         },
         "relatedQualityElement": {
-          "$ref": "#/definitions/QualityElementUnion"
+          "$ref": "#QualityElementUnion"
         }
       },
       "required": [
@@ -1181,22 +1182,22 @@
           "type": "string"
         },
         "evaluationMethodType": {
-          "$ref": "#/definitions/EvaluationMethodTypeCode"
+          "$ref": "#EvaluationMethodTypeCode"
         },
         "evaluationProcedure": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
         },
         "dateTime": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/DateOrDateTime"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#DateOrDateTime"
           },
           "uniqueItems": true
         },
         "referenceDoc": {
           "type": "array",
           "items": {
-            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+            "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
           },
           "uniqueItems": true
         },
@@ -1225,7 +1226,7 @@
       "type": "object",
       "properties": {
         "citation": {
-          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/CI_Citation"
+          "$ref": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json#CI_Citation"
         }
       },
       "required": [
@@ -1240,26 +1241,26 @@
           "const": "TemporalConsistency"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -1273,13 +1274,13 @@
       "$anchor": "TemporalQualityUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/AccuracyOfATimeMeasurement"
+          "$ref": "#AccuracyOfATimeMeasurement"
         },
         {
-          "$ref": "#/definitions/TemporalConsistency"
+          "$ref": "#TemporalConsistency"
         },
         {
-          "$ref": "#/definitions/TemporalValidity"
+          "$ref": "#TemporalValidity"
         }
       ]
     },
@@ -1291,26 +1292,26 @@
           "const": "TemporalValidity"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -1328,26 +1329,26 @@
           "const": "ThematicClassificationCorrectness"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
@@ -1361,13 +1362,13 @@
       "$anchor": "ThematicQualityUnion",
       "oneOf": [
         {
-          "$ref": "#/definitions/NonQuantitativeAttributeCorrectness"
+          "$ref": "#NonQuantitativeAttributeCorrectness"
         },
         {
-          "$ref": "#/definitions/QuantitativeAttributeAccuracy"
+          "$ref": "#QuantitativeAttributeAccuracy"
         },
         {
-          "$ref": "#/definitions/ThematicClassificationCorrectness"
+          "$ref": "#ThematicClassificationCorrectness"
         }
       ]
     },
@@ -1379,26 +1380,26 @@
           "const": "TopologicalConsistency"
         },
         "measure": {
-          "$ref": "#/definitions/MeasureReference"
+          "$ref": "#MeasureReference"
         },
         "result": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityResultUnion"
+            "$ref": "#QualityResultUnion"
           },
           "uniqueItems": true
         },
         "derivedElement": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualityElementUnion"
+            "$ref": "#QualityElementUnion"
           },
           "uniqueItems": true
         },
         "evaluationMethod": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EvaluationMethodUnion"
+            "$ref": "#EvaluationMethodUnion"
           },
           "uniqueItems": true
         }
