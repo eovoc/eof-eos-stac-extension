@@ -190,8 +190,7 @@
   "id": "ENMAP_HSI_L2A",
   "stac_extensions": [
     "https://stac-extensions.github.io/processing/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-   
+  
      "https://stac-extensions.github.io/ceos-ard/v0.2.0/schema.json",
      "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/schema.json"
   ],
