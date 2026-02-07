@@ -220,6 +220,8 @@
     "updated": "2024-04-30T11:28:07Z",
     "product:acquisition_type": "nominal",
     "platform": "PROBA-1",
+
+    "dq:lineage":[],
 	"dq:quality": [{
             "scope": {"level": "dataset"},
             "report": [
