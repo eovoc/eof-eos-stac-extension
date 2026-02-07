@@ -1,6 +1,6 @@
 {
    "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/schema.json#",
+  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/schema.json",
   "title": "Data Quality Extension",
   "description": "Data Quality Extension for STAC Items and STAC Collections.",
   "oneOf": [
@@ -47,6 +47,7 @@
       "type": "object",
       "allOf": [
         {
+	      "type": "object",
           "required": [
             "type"
           ],
@@ -74,6 +75,7 @@
         },
         {
           "$comment": "This validates the fields in Collection Assets, but does not require them.",
+		  "type": "object",
           "required": [
             "assets"
           ],
@@ -99,7 +101,8 @@
         },
         {
           "$comment": "This is the schema for the fields in Item Asset Definitions. It doesn't require any fields.",
-          "required": [
+          "type": "object",
+		  "required": [
             "item_assets"
           ],
           "properties": {
@@ -124,6 +127,7 @@
         },
         {
           "$comment": "This is the schema for the fields in Summaries. By default, only checks the existance of the properties, but not the schema of the summaries.",
+		  "type": "object",
           "required": [
             "summaries"
           ],
@@ -154,7 +158,8 @@
     "require_any_field": {
       "$comment": "Please list all fields here so that we can force the existance of one of them in other parts of the schemas.",
       "anyOf": [
-        {"required": ["dq:quality"]}
+        {   "type": "object",
+			"required": ["dq:quality"]}
        
       ]
     },

@@ -1,60 +1,59 @@
 {
-  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/; edited by hand",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://schemas.isotc211.org/json/19115/-4/mdj/1.0.0/mdj.json",
-  "$defs": {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json",
+  "definitions": {
     "Abstract_ConstraintUnion": {
-      "$anchor": "Abstract_ConstraintUnion",
+      "$comment": "Abstract_ConstraintUnion",
       "oneOf": [
         {
-          "$ref": "#MD_Constraints"
+          "$ref": "#/definitions/MD_Constraints"
         },
         {
-          "$ref": "#MD_LegalConstraints"
+          "$ref": "#/definitions/MD_LegalConstraints"
         },
         {
-          "$ref": "#MD_SecurityConstraints"
+          "$ref": "#/definitions/MD_SecurityConstraints"
         }
       ]
     },
     "Abstract_DistributionUnion": {
-      "$anchor": "Abstract_DistributionUnion",
-      "$ref": "#MD_Distribution"
+      "$comment": "Abstract_DistributionUnion",
+      "$ref": "#/definitions/MD_Distribution"
     },
     "Abstract_ExtentUnion": {
-      "$anchor": "Abstract_ExtentUnion",
-      "$ref": "#EX_Extent"
+      "$comment": "Abstract_ExtentUnion",
+      "$ref": "#/definitions/EX_Extent"
     },
     "Abstract_FormatUnion": {
-      "$anchor": "Abstract_FormatUnion",
-      "$ref": "#MD_Format"
+      "$comment": "Abstract_FormatUnion",
+      "$ref": "#/definitions/MD_Format"
     },
     "Abstract_LineageInformationUnion": {
-      "$anchor": "Abstract_LineageInformationUnion",
-      "$ref": "#LI_Lineage"
+      "$comment": "Abstract_LineageInformationUnion",
+      "$ref": "#/definitions/LI_Lineage"
     },
     "Abstract_MaintenanceUnion": {
-      "$anchor": "Abstract_MaintenanceUnion",
-      "$ref": "#MD_MaintenanceInformation"
+      "$comment": "Abstract_MaintenanceUnion",
+      "$ref": "#/definitions/MD_MaintenanceInformation"
     },
     "Abstract_MetadataExtension": {
-      "$anchor": "Abstract_MetadataExtension",
+      "$comment": "Abstract_MetadataExtension",
       "type": "object"
     },
     "Abstract_MetadataUnion": {
-      "$anchor": "Abstract_MetadataUnion",
-      "$ref": "#MD_Metadata"
+      "$comment": "Abstract_MetadataUnion",
+      "$ref": "#/definitions/MD_Metadata"
     },
     "Abstract_ResourceDescriptionUnion": {
-      "$anchor": "Abstract_ResourceDescriptionUnion",
-      "$ref": "#MD_DataIdentification"
+      "$comment": "Abstract_ResourceDescriptionUnion",
+      "$ref": "#/definitions/MD_DataIdentification"
     },
     "Abstract_StandardOrderProcess": {
-      "$anchor": "Abstract_StandardOrderProcess",
+      "$comment": "Abstract_StandardOrderProcess",
       "type": "object"
     },
     "CI_Address": {
-      "$anchor": "CI_Address",
+      "$comment": "CI_Address",
       "type": "object",
       "properties": {
         "deliveryPoint": {
@@ -86,7 +85,7 @@
       }
     },
     "CI_Citation": {
-      "$anchor": "CI_Citation",
+      "$comment": "CI_Citation",
       "type": "object",
       "properties": {
         "title": {
@@ -100,37 +99,37 @@
           "uniqueItems": true
         },
         "date": {
-          "$ref": "#CI_Date"
+          "$ref": "#/definitions/CI_Date"
         },
         "edition": {
           "type": "string"
         },
         "editionDate": {
-          "$ref": "#DateOrDateTime"
+          "$ref": "#/definitions/DateOrDateTime"
         },
         "identifier": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Identifier"
+            "$ref": "#/definitions/MD_Identifier"
           },
           "uniqueItems": true
         },
         "citedResponsibleParty": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         },
         "presentationForm": {
           "type": "array",
           "items": {
-            "$ref": "#CI_PresentationFormCode"
+            "$ref": "#/definitions/CI_PresentationFormCode"
           },
           "uniqueItems": true
         },
         "series": {
-          "$ref": "#CI_Series"
+          "$ref": "#/definitions/CI_Series"
         },
         "otherCitationDetails": {
           "type": "array",
@@ -148,7 +147,7 @@
         "onlineResource": {
           "type": "array",
           "items": {
-            "$ref": "#CI_OnlineResource"
+            "$ref": "#/definitions/CI_OnlineResource"
           },
           "uniqueItems": true
         }
@@ -158,23 +157,23 @@
       ]
     },
     "CI_Contact": {
-      "$anchor": "CI_Contact",
+      "$comment": "CI_Contact",
       "type": "object",
       "properties": {
         "phone": {
-          "$ref": "#CI_Telephone"
+          "$ref": "#/definitions/CI_Telephone"
         },
         "address": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Address"
+            "$ref": "#/definitions/CI_Address"
           },
           "uniqueItems": true
         },
         "onlineResource": {
           "type": "array",
           "items": {
-            "$ref": "#CI_OnlineResource"
+            "$ref": "#/definitions/CI_OnlineResource"
           },
           "uniqueItems": true
         },
@@ -194,24 +193,21 @@
       }
     },
     "CI_Date": {
-      "$anchor": "CI_Date",
+      "$comment": "CI_Date",
       "type": "object",
       "$comment": "Could also use patternProperties with the values from the CI_DateTypeCode codelist",
       "additionalProperties": {
-        "$ref": "#DateOrDateTime"
+        "$ref": "#/definitions/DateOrDateTime"
       }
     },
     "DateOrDateTime": {
-      "$anchor": "DateOrDateTime",
+      "$comment": "DateOrDateTime",
       "oneOf": [
           {
-            "type": "string",
-            "format": "date-time"
+            "type": "string"
+         
           },
-          {
-            "type": "string",
-            "format": "date"
-          },
+         
           {
             "type": "string",
             "description": "month and year",
@@ -225,7 +221,7 @@
         ]
     },
     "CI_Individual": {
-      "$anchor": "CI_Individual",
+      "$comment": "CI_Individual",
       "type": "object",
       "properties": {
         "type": {
@@ -237,14 +233,14 @@
         "contactInfo": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Contact"
+            "$ref": "#/definitions/CI_Contact"
           },
           "uniqueItems": true
         },
         "partyIdentifier": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Identifier"
+            "$ref": "#/definitions/MD_Identifier"
           },
           "uniqueItems": true
         },
@@ -257,11 +253,11 @@
       ]
     },
     "CI_OnLineFunctionCode": {
-      "$anchor": "CI_OnLineFunctionCode",
+      "$comment": "CI_OnLineFunctionCode",
       "type": "string"
     },
     "CI_OnlineResource": {
-      "$anchor": "CI_OnlineResource",
+      "$comment": "CI_OnlineResource",
       "type": "object",
       "properties": {
         "linkage": {
@@ -280,7 +276,7 @@
           "type": "string"
         },
         "function": {
-          "$ref": "#CI_OnLineFunctionCode"
+          "$ref": "#/definitions/CI_OnLineFunctionCode"
         },
         "protocolRequest": {
           "type": "string"
@@ -291,7 +287,7 @@
       ]
     },
     "CI_Organisation": {
-      "$anchor": "CI_Organisation",
+      "$comment": "CI_Organisation",
       "type": "object",
       "properties": {
         "type": {
@@ -303,21 +299,21 @@
         "contactInfo": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Contact"
+            "$ref": "#/definitions/CI_Contact"
           },
           "uniqueItems": true
         },
         "partyIdentifier": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Identifier"
+            "$ref": "#/definitions/MD_Identifier"
           },
           "uniqueItems": true
         },
         "individual": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Individual"
+            "$ref": "#/definitions/CI_Individual"
           },
           "uniqueItems": true
         }
@@ -327,38 +323,38 @@
       ]
     },
     "CI_PartyUnion": {
-      "$anchor": "CI_PartyUnion",
+      "$comment": "CI_PartyUnion",
       "oneOf": [
         {
-          "$ref": "#CI_Individual"
+          "$ref": "#/definitions/CI_Individual"
         },
         {
-          "$ref": "#CI_Organisation"
+          "$ref": "#/definitions/CI_Organisation"
         }
       ]
     },
     "CI_PresentationFormCode": {
-      "$anchor": "CI_PresentationFormCode",
+      "$comment": "CI_PresentationFormCode",
       "type": "string"
     },
     "CI_Responsibility": {
-      "$anchor": "CI_Responsibility",
+      "$comment": "CI_Responsibility",
       "type": "object",
       "properties": {
         "party": {
           "type": "array",
           "items": {
-            "$ref": "#CI_PartyUnion"
+            "$ref": "#/definitions/CI_PartyUnion"
           },
           "uniqueItems": true
         },
         "role": {
-          "$ref": "#CI_RoleCode"
+          "$ref": "#/definitions/CI_RoleCode"
         },
         "extent": {
           "type": "array",
           "items": {
-            "$ref": "#EX_Extent"
+            "$ref": "#/definitions/EX_Extent"
           },
           "uniqueItems": true
         }
@@ -368,11 +364,11 @@
       ]
     },
     "CI_RoleCode": {
-      "$anchor": "CI_RoleCode",
+      "$comment": "CI_RoleCode",
       "type": "string"
     },
     "CI_Series": {
-      "$anchor": "CI_Series",
+      "$comment": "CI_Series",
       "type": "object",
       "properties": {
         "name": {
@@ -387,40 +383,40 @@
       }
     },
     "CI_Telephone": {
-      "$anchor": "CI_Telephone",
+      "$comment": "CI_Telephone",
       "type": "object",
       "additionalProperties": {
         "type": "string"
       }
     },
     "CI_TelephoneTypeCode": {
-      "$anchor": "CI_TelephoneTypeCode",
+      "$comment": "CI_TelephoneTypeCode",
       "type": "string"
     },
     "CountryCode": {
-      "$anchor": "CountryCode",
+      "$comment": "CountryCode",
       "type": "string"
     },
     "DCPList": {
-      "$anchor": "DCPList",
+      "$comment": "DCPList",
       "type": "string"
     },
     "DS_AssociationTypeCode": {
-      "$anchor": "DS_AssociationTypeCode",
+      "$comment": "DS_AssociationTypeCode",
       "type": "string"
     },
     "DS_InitiativeTypeCode": {
-      "$anchor": "DS_InitiativeTypeCode",
+      "$comment": "DS_InitiativeTypeCode",
       "type": "string"
     },
     "EX_Extent": {
-      "$anchor": "EX_Extent",
+      "$comment": "EX_Extent",
       "type": "object",
       "properties": {
         "geographicElement": {
           "type": "array",
           "items": {
-            "$ref": "#EX_GeographicExtentUnion"
+            "$ref": "#/definitions/EX_GeographicExtentUnion"
           },
           "minItems": 1
         },
@@ -430,7 +426,7 @@
       }
     },
     "EX_GeographicBoundingBox": {
-      "$anchor": "EX_GeographicBoundingBox",
+      "$comment": "EX_GeographicBoundingBox",
       "type": "object",
       "properties": {
         "type": {
@@ -462,7 +458,7 @@
       ]
     },
     "EX_GeographicDescription": {
-      "$anchor": "EX_GeographicDescription",
+      "$comment": "EX_GeographicDescription",
       "type": "object",
       "properties": {
         "type": {
@@ -473,7 +469,7 @@
           "default": false
         },
         "geographicIdentifier": {
-          "$ref": "#MD_Identifier"
+          "$ref": "#/definitions/MD_Identifier"
         }
       },
       "required": [
@@ -482,24 +478,24 @@
       ]
     },
     "EX_GeographicExtentUnion": {
-      "$anchor": "EX_GeographicExtentUnion",
+      "$comment": "EX_GeographicExtentUnion",
       "oneOf": [
         {
-          "$ref": "#EX_GeographicBoundingBox"
+          "$ref": "#/definitions/EX_GeographicBoundingBox"
         },
         {
-          "$ref": "#EX_GeographicDescription"
+          "$ref": "#/definitions/EX_GeographicDescription"
         }
       ]
     },
     "LI_Lineage": {
-      "$anchor": "LI_Lineage",
+      "$comment": "LI_Lineage",
       "type": "object",
       "properties": {
         "source": {
           "type": "array",
           "items": {
-            "$ref": "#LI_Source"
+            "$ref": "#/definitions/LI_Source"
           },
           "uniqueItems": true
         },
@@ -507,60 +503,60 @@
           "type": "string"
         },
         "scope": {
-          "$ref": "#MD_Scope"
+          "$ref": "#/definitions/MD_Scope"
         },
         "additionalDocumentation": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         }
       }
     },
     "LI_Source": {
-      "$anchor": "LI_Source",
+      "$comment": "LI_Source",
       "type": "object",
       "properties": {
         "description": {
           "type": "string"
         },
         "sourceReferenceSystem": {
-          "$ref": "#MD_ReferenceSystem"
+          "$ref": "#/definitions/MD_ReferenceSystem"
         },
         "sourceCitation": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "sourceMetadata": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "scope": {
-          "$ref": "#MD_Scope"
+          "$ref": "#/definitions/MD_Scope"
         }
       }
     },
     "LanguageCode": {
-      "$anchor": "LanguageCode",
+      "$comment": "LanguageCode",
       "type": "string"
     },
     "MD_CellGeometryCode": {
-      "$anchor": "MD_CellGeometryCode",
+      "$comment": "MD_CellGeometryCode",
       "type": "string"
     },
     "MD_CharacterSetCode": {
-      "$anchor": "MD_CharacterSetCode",
+      "$comment": "MD_CharacterSetCode",
       "type": "string"
     },
     "MD_ClassificationCode": {
-      "$anchor": "MD_ClassificationCode",
+      "$comment": "MD_ClassificationCode",
       "type": "string"
     },
     "MD_Constraints": {
-      "$anchor": "MD_Constraints",
+      "$comment": "MD_Constraints",
       "type": "object",
       "properties": {
         "type": {
@@ -574,19 +570,19 @@
           "uniqueItems": true
         },
         "constraintApplicationScope": {
-          "$ref": "#MD_Scope"
+          "$ref": "#/definitions/MD_Scope"
         },
         "reference": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "responsibleParty": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         }
@@ -596,29 +592,29 @@
       ]
     },
     "MD_ConstraintsUnion": {
-      "$anchor": "MD_ConstraintsUnion",
+      "$comment": "MD_ConstraintsUnion",
       "oneOf": [
         {
-          "$ref": "#MD_Constraints"
+          "$ref": "#/definitions/MD_Constraints"
         },
         {
-          "$ref": "#MD_LegalConstraints"
+          "$ref": "#/definitions/MD_LegalConstraints"
         },
         {
-          "$ref": "#MD_SecurityConstraints"
+          "$ref": "#/definitions/MD_SecurityConstraints"
         }
       ]
     },
     "MD_CoverageContentTypeCode": {
-      "$anchor": "MD_CoverageContentTypeCode",
+      "$comment": "MD_CoverageContentTypeCode",
       "type": "string"
     },
     "MD_DataIdentification": {
-      "$anchor": "MD_DataIdentification",
+      "$comment": "MD_DataIdentification",
       "type": "object",
       "properties": {
         "citation": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "abstract": {
           "type": "string"
@@ -636,21 +632,21 @@
         "status": {
           "type": "array",
           "items": {
-            "$ref": "#MD_ProgressCode"
+            "$ref": "#/definitions/MD_ProgressCode"
           },
           "uniqueItems": true
         },
         "pointOfContact": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         },
         "spatialRepresentationType": {
           "type": "array",
           "items": {
-            "$ref": "#MD_SpatialRepresentationTypeCode"
+            "$ref": "#/definitions/MD_SpatialRepresentationTypeCode"
           },
           "uniqueItems": true
         },
@@ -665,41 +661,41 @@
         "topicCategory": {
           "type": "array",
           "items": {
-            "$ref": "#MD_TopicCategoryCode"
+            "$ref": "#/definitions/MD_TopicCategoryCode"
           },
           "uniqueItems": true
         },
         "extent": {
           "type": "array",
           "items": {
-            "$ref": "#EX_Extent"
+            "$ref": "#/definitions/EX_Extent"
           },
           "uniqueItems": true
         },
         "additionalDocumentation": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "processingLevel": {
-          "$ref": "#MD_Identifier"
+          "$ref": "#/definitions/MD_Identifier"
         },
         "descriptiveKeywords": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Keywords"
+            "$ref": "#/definitions/MD_Keywords"
           },
           "uniqueItems": true
         },
         "defaultLocale": {
-          "$ref": "#PT_Locale"
+          "$ref": "#/definitions/PT_Locale"
         },
         "otherLocale": {
           "type": "array",
           "items": {
-            "$ref": "#PT_Locale"
+            "$ref": "#/definitions/PT_Locale"
           },
           "uniqueItems": true
         },
@@ -711,18 +707,18 @@
         },
         "resourceFormat": {
           "type": "array",
-          "items": {"$ref": "#MD_Format"},
+          "items": {"$ref": "#/definitions/MD_Format"},
           "uniqueItems": true
         },
         "resourceMaintenance": {
           "type": "array",
-          "items": {"$ref": "#MD_MaintenanceInformation"},
+          "items": {"$ref": "#/definitions/MD_MaintenanceInformation"},
           "uniqueItems": true
         },
         "resourceConstraints": {
           "type": "array",
           "items": {
-            "$ref": "#Abstract_ConstraintUnion"
+            "$ref": "#/definitions/Abstract_ConstraintUnion"
           },
           "uniqueItems": true
         }
@@ -733,11 +729,11 @@
       ]
     },
     "MD_DatatypeCode": {
-      "$anchor": "MD_DatatypeCode",
+      "$comment": "MD_DatatypeCode",
       "type": "string"
     },
     "MD_DigitalTransferOptions": {
-      "$anchor": "MD_DigitalTransferOptions",
+      "$comment": "MD_DigitalTransferOptions",
       "type": "object",
       "properties": {
         "unitsOfDistribution": {
@@ -749,14 +745,14 @@
         "onLine": {
           "type": "array",
           "items": {
-            "$ref": "#CI_OnlineResource"
+            "$ref": "#/definitions/CI_OnlineResource"
           },
           "uniqueItems": true
         },
         "offLine": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Medium"
+            "$ref": "#/definitions/MD_Medium"
           },
           "uniqueItems": true
         },
@@ -764,38 +760,38 @@
         "distributionFormat": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Format"
+            "$ref": "#/definitions/MD_Format"
           },
           "uniqueItems": true
         }
       }
     },
     "MD_DimensionNameTypeCode": {
-      "$anchor": "MD_DimensionNameTypeCode",
+      "$comment": "MD_DimensionNameTypeCode",
       "type": "string"
     },
     "MD_Distribution": {
-      "$anchor": "MD_Distribution",
+      "$comment": "MD_Distribution",
       "type": "object",
       "properties": {
         "distributor": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Distributor"
+            "$ref": "#/definitions/MD_Distributor"
           },
           "uniqueItems": true
         },
         "transferOptions": {
           "type": "array",
           "items": {
-            "$ref": "#MD_DigitalTransferOptions"
+            "$ref": "#/definitions/MD_DigitalTransferOptions"
           },
           "uniqueItems": true
         },
         "distributionFormat": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Format"
+            "$ref": "#/definitions/MD_Format"
           },
           "uniqueItems": true
         },
@@ -805,25 +801,25 @@
       }
     },
     "MD_Distributor": {
-      "$anchor": "MD_Distributor",
+      "$comment": "MD_Distributor",
       "type": "object",
       "properties": {
         "distributionFormat": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Format"
+            "$ref": "#/definitions/MD_Format"
           },
           "uniqueItems": true
         },
         "distributorTransferOptions": {
           "type": "array",
           "items": {
-            "$ref": "#MD_DigitalTransferOptions"
+            "$ref": "#/definitions/MD_DigitalTransferOptions"
           },
           "uniqueItems": true
         },
         "distributorContact": {
-          "$ref": "#CI_Responsibility"
+          "$ref": "#/definitions/CI_Responsibility"
         }
       },
       "required": [
@@ -831,18 +827,18 @@
       ]
     },
     "MD_Format": {
-      "$anchor": "MD_Format",
+      "$comment": "MD_Format",
       "type": "object",
       "properties": {
         "formatDistributor": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Distributor"
+            "$ref": "#/definitions/MD_Distributor"
           },
           "uniqueItems": true
         },
         "formatSpecificationCitation": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "amendmentNumber": {
           "type": "string"
@@ -853,7 +849,7 @@
         "medium": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Medium"
+            "$ref": "#/definitions/MD_Medium"
           },
           "uniqueItems": true
         }
@@ -863,19 +859,19 @@
       ]
     },
     "MD_GeometricObjectTypeCode": {
-      "$anchor": "MD_GeometricObjectTypeCode",
+      "$comment": "MD_GeometricObjectTypeCode",
       "type": "string"
     },
     "MD_IdentificationUnion": {
-      "$anchor": "MD_IdentificationUnion",
-      "$ref": "#MD_DataIdentification"
+      "$comment": "MD_IdentificationUnion",
+      "$ref": "#/definitions/MD_DataIdentification"
     },
     "MD_Identifier": {
-      "$anchor": "MD_Identifier",
+      "$comment": "MD_Identifier",
       "type": "object",
       "properties": {
         "authority": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "code": {
           "type": "string"
@@ -895,15 +891,15 @@
       ]
     },
     "MD_ImagingConditionCode": {
-      "$anchor": "MD_ImagingConditionCode",
+      "$comment": "MD_ImagingConditionCode",
       "type": "string"
     },
     "MD_KeywordTypeCode": {
-      "$anchor": "MD_KeywordTypeCode",
+      "$comment": "MD_KeywordTypeCode",
       "type": "string"
     },
     "MD_Keywords": {
-      "$anchor": "MD_Keywords",
+      "$comment": "MD_Keywords",
       "type": "object",
       "properties": {
         "keyword": {
@@ -915,10 +911,10 @@
           "uniqueItems": true
         },
         "type": {
-          "$ref": "#MD_KeywordTypeCode"
+          "$ref": "#/definitions/MD_KeywordTypeCode"
         },
         "thesaurusName": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         }
       },
       "required": [
@@ -926,7 +922,7 @@
       ]
     },
     "MD_LegalConstraints": {
-      "$anchor": "MD_LegalConstraints",
+      "$comment": "MD_LegalConstraints",
       "type": "object",
       "properties": {
         "type": {
@@ -940,33 +936,33 @@
           "uniqueItems": true
         },
         "constraintApplicationScope": {
-          "$ref": "#MD_Scope"
+          "$ref": "#/definitions/MD_Scope"
         },
         "reference": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "responsibleParty": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         },
         "accessConstraints": {
           "type": "array",
           "items": {
-            "$ref": "#MD_RestrictionCode"
+            "$ref": "#/definitions/MD_RestrictionCode"
           },
           "uniqueItems": true
         },
         "useConstraints": {
           "type": "array",
           "items": {
-            "$ref": "#MD_RestrictionCode"
+            "$ref": "#/definitions/MD_RestrictionCode"
           },
           "uniqueItems": true
         },
@@ -983,24 +979,24 @@
       ]
     },
     "MD_MaintenanceFrequencyCode": {
-      "$anchor": "MD_MaintenanceFrequencyCode",
+      "$comment": "MD_MaintenanceFrequencyCode",
       "type": "string"
     },
     "MD_MaintenanceInformation": {
-      "$anchor": "MD_MaintenanceInformation",
+      "$comment": "MD_MaintenanceInformation",
       "type": "object",
       "properties": {
         "maintenanceAndUpdateFrequency": {
-          "$ref": "#MD_MaintenanceFrequencyCode"
+          "$ref": "#/definitions/MD_MaintenanceFrequencyCode"
         },
         "maintenanceDate": {
-          "$ref": "#CI_Date"
+          "$ref": "#/definitions/CI_Date"
         },
         "userDefinedMaintenanceFrequency": {},
         "maintenanceScope": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Scope"
+            "$ref": "#/definitions/MD_Scope"
           },
           "uniqueItems": true
         },
@@ -1014,18 +1010,18 @@
         "contact": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         }
       }
     },
     "MD_Medium": {
-      "$anchor": "MD_Medium",
+      "$comment": "MD_Medium",
       "type": "object",
       "properties": {
         "name": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "density": {
           "type": "integer"
@@ -1039,7 +1035,7 @@
         "mediumFormat": {
           "type": "array",
           "items": {
-            "$ref": "#MD_MediumFormatCode"
+            "$ref": "#/definitions/MD_MediumFormatCode"
           },
           "uniqueItems": true
         },
@@ -1047,111 +1043,112 @@
           "type": "string"
         },
         "identifier": {
-          "$ref": "#MD_Identifier"
+          "$ref": "#/definitions/MD_Identifier"
         }
       }
     },
     "MD_MediumFormatCode": {
-      "$anchor": "MD_MediumFormatCode",
+      "$comment": "MD_MediumFormatCode",
       "type": "string"
     },
     "MD_Metadata": {
-      "$anchor": "MD_Metadata",
+      "$comment": "MD_Metadata",
       "type": "object",
       "properties": {
         "metadataConstraints": {
           "type": "array",
           "items": {
-            "$ref": "#Abstract_ConstraintUnion"
+            "$ref": "#/definitions/Abstract_ConstraintUnion"
           },
           "uniqueItems": true
         },
         "resourceLineage": {
           "type": "array",
           "items": {
-            "$ref": "#LI_Lineage"
+            "$ref": "#/definitions/LI_Lineage"
           },
           "uniqueItems": true
         },
         "distributionInfo": {
           "type": "array",
           "items": {
-            "$ref": "#MD_Distribution"
+            "$ref": "#/definitions/MD_Distribution"
           },
           "uniqueItems": true
         },
         "identificationInfo": {
-          "$ref": "#MD_IdentificationUnion"
+          "$ref": "#/definitions/MD_IdentificationUnion"
         },
         "metadataMaintenance": {
-          "$ref": "#MD_MaintenanceInformation"
-        },
-        "metadataScope": {
-          "type": "array",
-          "items": {
-            "$ref": "#MD_MetadataScope"
-          },
-          "uniqueItems": true
+          "$ref": "#/definitions/MD_MaintenanceInformation"
         },
         "dataQualityInfo": {
           "type": "array",
           "items": {
-            "$ref": "https://schemas.isotc211.org/json/19157/-1/dqc/1.0.0/dqc.json#DataQuality"
+            "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/dqc.json#definitions/DataQuality"
           },
           "uniqueItems": true
         },
+        "metadataScope": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MD_MetadataScope"
+          },
+          "uniqueItems": true
+        },
+      
         "metadataIdentifier": {
-          "$ref": "#MD_Identifier"
+          "$ref": "#/definitions/MD_Identifier"
         },
         "defaultLocale": {
-          "$ref": "#PT_Locale"
+          "$ref": "#/definitions/PT_Locale"
         },
         "parentMetadata": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "contact": {
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         },
         "dateInfo": {
-          "$ref": "#CI_Date"
+          "$ref": "#/definitions/CI_Date"
         },
         "metadataStandard": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "metadataProfile": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "alternativeMetadataReference": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "otherLocale": {
           "type": "array",
           "items": {
-            "$ref": "#PT_Locale"
+            "$ref": "#/definitions/PT_Locale"
           },
           "uniqueItems": true
         },
         "metadataLinkage": {
           "type": "array",
           "items": {
-            "$ref": "#CI_OnlineResource"
+            "$ref": "#/definitions/CI_OnlineResource"
           },
           "uniqueItems": true
         }
@@ -1162,11 +1159,11 @@
       ]
     },
     "MD_MetadataScope": {
-      "$anchor": "MD_MetadataScope",
+      "$comment": "MD_MetadataScope",
       "type": "object",
       "properties": {
         "resourceScope": {
-          "$ref": "#MD_ScopeCode"
+          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_ScopeCode"
         },
         "name": {
           "type": "string"
@@ -1177,7 +1174,7 @@
       ]
     },
     "MD_ObligationCode": {
-      "$anchor": "MD_ObligationCode",
+      "$comment": "MD_ObligationCode",
       "type": "string",
       "enum": [
         "mandatory",
@@ -1186,15 +1183,15 @@
       ]
     },
     "MD_ProgressCode": {
-      "$anchor": "MD_ProgressCode",
+      "$comment": "MD_ProgressCode",
       "type": "string"
     },
     "MD_ReferenceSystem": {
-      "$anchor": "MD_ReferenceSystem",
+      "$comment": "MD_ReferenceSystem",
       "type": "object",
       "properties": {
         "referenceSystemIdentifier": {
-          "$ref": "#MD_Identifier"
+          "$ref": "#/definitions/MD_Identifier"
         },
         "crs": {
            "type": "string",
@@ -1202,16 +1199,16 @@
         },
         "coordinateEpoch": {"type": "number"},
         "referenceSystemType": {
-          "$ref": "#MD_ReferenceSystemTypeCode"
+          "$ref": "#/definitions/MD_ReferenceSystemTypeCode"
         }
       }
     },
     "MD_ReferenceSystemTypeCode": {
-      "$anchor": "MD_ReferenceSystemTypeCode",
+      "$comment": "MD_ReferenceSystemTypeCode",
       "type": "string"
     },
     "MD_RepresentativeFraction": {
-      "$anchor": "MD_RepresentativeFraction",
+      "$comment": "MD_RepresentativeFraction",
       "type": "object",
       "properties": {
         "denominator": {
@@ -1223,27 +1220,27 @@
       ]
     },
     "MD_RestrictionCode": {
-      "$anchor": "MD_RestrictionCode",
+      "$comment": "MD_RestrictionCode",
       "type": "string"
     },
     "MD_Scope": {
-      "$anchor": "MD_Scope",
+      "$comment": "MD_Scope",
       "type": "object",
       "properties": {
         "level": {
-          "$ref": "#MD_ScopeCode"
+          "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/MD_ScopeCode"
         },
         "extent": {
           "type": "array",
           "items": {
-            "$ref": "#EX_Extent"
+            "$ref": "#/definitions/EX_Extent"
           },
           "uniqueItems": true
         },
         "levelDescription": {
           "type": "array",
           "items": {
-            "$ref": "#MD_ScopeDescription"
+            "$ref": "#/definitions/MD_ScopeDescription"
           },
           "uniqueItems": true
         }
@@ -1253,11 +1250,11 @@
       ]
     },
     "MD_ScopeCode": {
-      "$anchor": "MD_ScopeCode",
+      "$comment": "MD_ScopeCode",
       "type": "string"
     },
     "MD_ScopeDescription": {
-      "$anchor": "MD_ScopeDescription",
+      "$comment": "MD_ScopeDescription",
       "type": "object",
       "properties": {
         "attributes": {
@@ -1299,7 +1296,7 @@
       "maxProperties": 1
     },
     "MD_SecurityConstraints": {
-      "$anchor": "MD_SecurityConstraints",
+      "$comment": "MD_SecurityConstraints",
       "type": "object",
       "properties": {
         "type": {
@@ -1313,24 +1310,24 @@
           "uniqueItems": true
         },
         "constraintApplicationScope": {
-          "$ref": "#MD_Scope"
+          "$ref": "#/definitions/MD_Scope"
         },
         "reference": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "responsibleParty": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         },
         "classification": {
-          "$ref": "#MD_ClassificationCode"
+          "$ref": "#/definitions/MD_ClassificationCode"
         },
         "userNote": {
           "type": "string"
@@ -1348,11 +1345,11 @@
       ]
     },
     "MD_SpatialRepresentationTypeCode": {
-      "$anchor": "MD_SpatialRepresentationTypeCode",
+      "$comment": "MD_SpatialRepresentationTypeCode",
       "type": "string"
     },
     "MD_TopicCategoryCode": {
-      "$anchor": "MD_TopicCategoryCode",
+      "$comment": "MD_TopicCategoryCode",
       "type": "string",
       "enum": [
         "farming",
@@ -1379,11 +1376,11 @@
       ]
     },
     "MD_TopologyLevelCode": {
-      "$anchor": "MD_TopologyLevelCode",
+      "$comment": "MD_TopologyLevelCode",
       "type": "string"
     },
     "MD_Usage": {
-      "$anchor": "MD_Usage",
+      "$comment": "MD_Usage",
       "type": "object",
       "properties": {
         "specificUsage": {
@@ -1400,7 +1397,7 @@
         "userContactInfo": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         },
@@ -1414,12 +1411,12 @@
         "additionalDocumentation": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Citation"
+            "$ref": "#/definitions/CI_Citation"
           },
           "uniqueItems": true
         },
         "identifiedIssues": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         }
       },
       "required": [
@@ -1428,22 +1425,22 @@
     },
     
     "InstantOrInterval": {
-    "$anchor": "InstantOrInterval",
-    "oneOf": [ {"$ref": "#DateOrDateTime"}, {"$ref": "#Interval"} ]
+    "$comment": "InstantOrInterval",
+    "oneOf": [ {"$ref": "#/definitions/DateOrDateTime"}, {"$ref": "#Interval"} ]
   },
   "Interval": {
-    "$anchor": "Interval",
+    "$comment": "Interval",
     "type": "array",
     "minItems": 2,
     "maxItems": 2,
     "items": {
-      "oneOf": [ {"$ref": "#DateOrDateTime"}, {"const": ".."} ]
+      "oneOf": [ {"$ref": "#/definitions/DateOrDateTime"}, {"const": ".."} ]
     }
   },
 
     
     "PT_Locale": {
-      "$anchor": "PT_Locale",
+      "$comment": "PT_Locale",
       "type": "object",
       "properties": {
         "language": {
@@ -1453,7 +1450,7 @@
           "$ref": "#CountryCode"
         },
         "characterEncoding": {
-          "$ref": "#MD_CharacterSetCode"
+          "$ref": "#/definitions/MD_CharacterSetCode"
         }
       },
       "required": [
@@ -1462,11 +1459,11 @@
       ]
     },
     "SV_CouplingType": {
-      "$anchor": "SV_CouplingType",
+      "$comment": "SV_CouplingType",
       "type": "string"
     },
     "SV_ParameterDirection": {
-      "$anchor": "SV_ParameterDirection",
+      "$comment": "SV_ParameterDirection",
       "type": "string",
       "enum": [
         "in",
@@ -1475,7 +1472,7 @@
       ]
     },
     "TaxonomicClassification": {
-      "$anchor": "TaxonomicClassification",
+      "$comment": "TaxonomicClassification",
       "type": "object",
       "properties": {
         "commonName": {
@@ -1505,11 +1502,11 @@
       ]
     },
     "TaxonomySystem": {
-      "$anchor": "TaxonomySystem",
+      "$comment": "TaxonomySystem",
       "type": "object",
       "properties": {
         "classificationSystemAuthority": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "classificationSystemModifications": {
           "type": "string"
@@ -1518,12 +1515,12 @@
           "type": "string"
         },
         "identificationReference": {
-          "$ref": "#CI_Citation"
+          "$ref": "#/definitions/CI_Citation"
         },
         "observer": {
           "type": "array",
           "items": {
-            "$ref": "#CI_Responsibility"
+            "$ref": "#/definitions/CI_Responsibility"
           },
           "uniqueItems": true
         },
@@ -1552,14 +1549,14 @@
       ]
     },
     "Vouchers": {
-      "$anchor": "Vouchers",
+      "$comment": "Vouchers",
       "type": "object",
       "properties": {
         "specimen": {
           "type": "string"
         },
         "repository": {
-          "$ref": "#CI_Responsibility"
+          "$ref": "#/definitions/CI_Responsibility"
         }
       },
       "required": [
@@ -1568,4 +1565,7 @@
       ]
     }
   }
+
+
+
 }
