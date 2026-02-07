@@ -189,13 +189,8 @@
       "href": "https://emc.spacebel.be/collections/PROBA.HRC.1A/items/PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001?httpAccept=application/vp%2Bld%2Bjson",
       "type": "application/vp+ld+json",
       "title": "Verifiable Presentation"
-    },
-    {
-      "rel": "describes",
-      "href": "did:web:emc.spacebel.be:collections:PROBA.HRC.1A:items:PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001",
-      "type": "application/did+json",
-      "title": "DID"
     }
+
   ],
   "id": "PR1_OPER_HRC_HRC_1P_20160204T060957_N37-039_E141-001_0001",
   "collection": "PROBA.HRC.1A",
