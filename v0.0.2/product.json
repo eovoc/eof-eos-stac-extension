@@ -1,0 +1,564 @@
+{
+  "stac_version": "1.0.0",
+  "assets": {
+    "enclosure_bio_common_types_xsd": {
+      "file:local_path": "bio-common-types.xsd",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-common-types.xsd",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-common-types.xsd",
+      "auth:refs": ["oidc"],
+      "type": "text/xml",
+      "title": "bio-common-types.xsd",
+      "file:size": 35562
+    },
+    "enclosure_i_fd_tiff": {
+      "file:local_path": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_fd.tiff",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/measurement/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_fd.tiff",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/measurement/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_fd.tiff",
+      "auth:refs": ["oidc"],
+      "type": "image/tiff",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_fd.tiff",
+      "file:size": 28271
+    },
+    "thumbnail": {
+      "roles": ["thumbnail"],
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/public/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_cfm_ql.jpg",
+      "type": "image/jpeg",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_cfm_ql.jpg"
+    },
+    "product": {
+      "file:local_path": "BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F.ZIP",
+      "alternate:name": "HTTPS",
+      "roles": [
+        "data",
+        "metadata",
+        "archive"
+      ],
+      "href": "https://catalog.maap.eo.esa.int/data/zipper/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F",
+      "auth:refs": ["oidc"],
+      "published": "2025-10-21T23:19:31.059Z",
+      "title": "Zipped product",
+      "type": "application/zip"
+    },
+    "enclosure_fd_proc_annotations_xsd": {
+      "file:local_path": "bio-l2l3-fd-proc-annotations.xsd",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-l2l3-fd-proc-annotations.xsd",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-l2l3-fd-proc-annotations.xsd",
+      "auth:refs": ["oidc"],
+      "type": "text/xml",
+      "title": "bio-l2l3-fd-proc-annotations.xsd",
+      "file:size": 11955
+    },
+    "enclosure_fd_ql_png": {
+      "file:local_path": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_fd_ql.png",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/preview/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_fd_ql.png",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/preview/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_fd_ql.png",
+      "auth:refs": ["oidc"],
+      "type": "image/png",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_fd_ql.png",
+      "file:size": 4446
+    },
+    "metadata_iso_19139": {
+      "roles": ["metadata"],
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC/items/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F?httpAccept=application/vnd.iso.19139%2Bxml",
+      "title": "ISO 19139 metadata",
+      "type": "application/vnd.iso.19139+xml"
+    },
+    "enclosure_i_cfm_tiff": {
+      "file:local_path": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_cfm.tiff",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/measurement/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_cfm.tiff",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/measurement/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_cfm.tiff",
+      "auth:refs": ["oidc"],
+      "type": "image/tiff",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_cfm.tiff",
+      "file:size": 34610
+    },
+    "enclosure_common_annotations_xsd": {
+      "file:local_path": "bio-l2l3-common-annotations.xsd",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-l2l3-common-annotations.xsd",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-l2l3-common-annotations.xsd",
+      "auth:refs": ["oidc"],
+      "type": "text/xml",
+      "title": "bio-l2l3-common-annotations.xsd",
+      "file:size": 33903
+    },
+    "enclosure_i_probability_tiff": {
+      "file:local_path": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_probability.tiff",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/measurement/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_probability.tiff",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/measurement/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_probability.tiff",
+      "auth:refs": ["oidc"],
+      "type": "image/tiff",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_i_probability.tiff",
+      "file:size": 46624
+    },
+    "enclosure_fd_main_annotation_xsd": {
+      "file:local_path": "bio-l2a-fd-main-annotation.xsd",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-l2a-fd-main-annotation.xsd",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/schema/bio-l2a-fd-main-annotation.xsd",
+      "auth:refs": ["oidc"],
+      "type": "text/xml",
+      "title": "bio-l2a-fd-main-annotation.xsd",
+      "file:size": 1998
+    },
+    "enclosure_nc": {
+      "file:local_path": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_lut.nc",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/annotation/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_lut.nc",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/annotation/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_lut.nc",
+      "auth:refs": ["oidc"],
+      "type": "application/x-netcdf",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_lut.nc",
+      "file:size": 94011142
+    },
+    "enclosure_xml": {
+      "file:local_path": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_annot.xml",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/annotation/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_annot.xml",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/annotation/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_annot.xml",
+      "auth:refs": ["oidc"],
+      "type": "text/xml",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_annot.xml",
+      "file:size": 16711
+    },
+    "enclosure_probability_ql_png": {
+      "file:local_path": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_probability_ql.png",
+      "alternate:name": "HTTPS",
+      "created": "2025-11-20T20:51:15Z",
+      "roles": ["data"],
+      "alternate": {"s3": {
+        "alternate:name": "S3",
+        "href": "s3://biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/preview/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_probability_ql.png",
+        "auth:refs": ["s3"]
+      }},
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/preview/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_probability_ql.png",
+      "auth:refs": ["oidc"],
+      "type": "image/png",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_probability_ql.png",
+      "file:size": 4446
+    },
+    "metadata_ogc_10_157r4": {
+      "roles": ["metadata"],
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC/items/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F?httpAccept=application/gml%2Bxml&recordSchema=om",
+      "title": "OGC 10-157r4 metadata",
+      "type": "application/gml+xml;profile=\"http://www.opengis.net/spec/EOMPOM/1.1\""
+    },
+    "metadata_ogc_17_003r2": {
+      "roles": ["metadata"],
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC/items/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F?mode=owc",
+      "title": "OGC 17-003r2 metadata",
+      "type": "application/geo+json;profile=\"http://www.opengis.net/spec/eo-geojson/1.0\""
+    },
+    "quicklook": {
+      "roles": ["overview"],
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/public/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_fd_ql.png",
+      "type": "image/png",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_fd_ql.png"
+    }
+  },
+  "bbox": [
+    -77.38244,
+    -1.9621029,
+    -76.55338,
+    -0.5793365
+  ],
+  "geometry": {
+    "coordinates": [[
+      [
+        -77.38244,
+        -1.8435793
+      ],
+      [
+        -76.81995,
+        -1.9621029
+      ],
+      [
+        -76.55338,
+        -0.6989397
+      ],
+      [
+        -77.11765,
+        -0.5793365
+      ],
+      [
+        -77.38244,
+        -1.8435793
+      ]
+    ]],
+    "type": "Polygon"
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC/items/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F",
+      "type": "application/geo+json;profile=\"https://stacspec.org\""
+    },
+    {
+      "rel": "collection",
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC",
+      "type": "application/json",
+      "title": "BiomassLevel2aIOC"
+    },
+    {
+      "rel": "parent",
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC",
+      "type": "application/json",
+      "title": "BiomassLevel2aIOC"
+    },
+    {
+      "rel": "root",
+      "href": "https://catalog.maap.eo.esa.int/catalogue/",
+      "type": "application/json",
+      "title": "MAAP Catalogue"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_01_diev9f.xml",
+      "type": "application/gml+xml;profile=\\\"http://www.opengis.net/spec/EOMPOM/1.1\\\"",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156_01_diev9f.xml"
+    },
+    {
+      "rel": "via",
+      "href": "https://catalog.maap.eo.esa.int/data/biomass-pdgs-01/BiomassLevel2aIOC/2025/10/06/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F/bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156.json",
+      "type": "application/geo+json",
+      "title": "bio_fp_fd__l2a_20251006t231917_20251021t231931_c_g___m___c___t____f156.json"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC/items/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F?httpAccept=application/ld%2Bjson",
+      "type": "application/ld+json",
+      "title": "JSON-LD metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC/items/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F?httpAccept=application/ld%2Bjson;profile=https://schema.org",
+      "type": "application/ld+json;profile=\"https://schema.org\"",
+      "title": "JSON-LD (schema.org) metadata"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://catalog.maap.eo.esa.int/catalogue/collections/BiomassLevel2aIOC/items/BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F?httpAccept=application/ld%2Bjson;profile=http://data.europa.eu/930/",
+      "type": "application/ld+json;profile=\"http://data.europa.eu/930/\"",
+      "title": "JSON-LD (GeoDCAT-AP) metadata"
+    }
+  ],
+  "id": "BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F",
+  "collection": "BiomassLevel2aIOC",
+  "type": "Feature",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://eof-eos.io.esa.int/stac-extension/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
+    "https://eovoc.github.io/eof-eos-stac-extension/v0.0.2/schema.json"
+  ],
+  "properties": {
+    "start_datetime": "2025-10-06T23:19:17.460Z",
+    "end_datetime": "2025-10-21T23:19:31.059Z",
+    "processing:facility": "Biomass CPF",
+    "product:type": "FP_FD__L2A",
+    "eofeos:global_coverage_id": "NA",
+    "title": "BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F",
+    "platform": "Biomass",
+    "eofeos:major_cycle_id": "NA",
+    "datetime": "2025-10-06T23:19:17.460Z",
+    "instruments": ["P-SAR"],
+    "constellation": "Biomass",
+    "sat:orbit_state": "descending",
+    "processing:software": {"Biomass L2a Processor": "4.1.1"},
+    "grid:code": "WRS-NA-156",
+    "processing:level": "L2A",
+    "created": "2025-11-20T20:51:15Z",
+    "published": "2025-11-20T20:55:31.916Z",
+    "version": "01",
+    "sar:observation_direction": "left",
+    "auth:schemes": {
+      "s3": {"type": "s3"},
+      "oidc": {
+        "openIdConnectUrl": "https://iam.ascend.icsgate.eu/realms/esa-maap/.well-known/openid-configuration",
+        "type": "openIdConnect"
+      }
+    },
+    "sar:instrument_mode": "SM",
+    "processing:datetime": "2025-11-20T20:51:15Z",
+    "eofeos:mission_phase": "COMMISSIONING",
+    "updated": "2026-02-05T08:32:57Z",
+    "product:acquisition_type": "nominal",
+    "dq:quality": [],
+     "dq:lineage": [
+            {
+                "statement": "Product History Information",
+                "processStep": [{
+                        "description": "L2A",
+                        "stepDateTime": {
+                            "created": "2025-11-20T20:51:15Z"
+                        },
+                        "processor": [{
+                                "role": "processor",
+                                "party": [{
+                                        "name": "Biomass CPF",
+                                         "type": "CI_Organisation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reference": [{
+                                "title": "BIOMASS Forest Disturbance Product Format Specification (BPS_FD_PFD)",
+                                "edition": "3.2.1"
+                            }, {
+                                "title": "BIOMASS Product Performance Description (BPS_PPD)",
+                                "edition": "3.1.0"
+                            }
+                        ],
+                        "source": [{
+                                "sourceCitation": {
+                                    "title": "BIO_S2_STA__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DHQZTP"
+                                }
+                                
+                            }, {
+                                "sourceCitation": {
+                                    "title": "BIO_S2_STA__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DHQZSU"
+                                }
+                            }, {
+                                "sourceCitation": {
+                                    "title": "BIO_S2_STA__1S_20251021T231910_20251021T231931_C_G___M___C___T____F156_01_DHQZT9"
+                                }
+                            }
+                        ],
+                        "processingInformation": {
+                            "softwareReference": {
+                                "title": "Biomass L2a Processor",
+                                "edition": "4.1.1"
+                            }
+                        },
+                        "output": [{
+                                "sourceCitation": {
+                                    "title": "BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "L1C",
+                        "stepDateTime": {
+                            "created": "2025-11-07T23:27:25Z"
+                        },
+                        "processor": [{
+                                "role": "processor",
+                                "party": [{
+                                        "name": "Biomass CPF",
+                                        "type": "CI_Organisation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reference": [{
+                                "title": "BIOMASS L1a/b/c Products Format Specification (BPS_L1_PFD) V1.4.3",
+                                "edition": "1.4.3"
+                            }, {
+                                "title": "BIOMASS Product Performance Description (BPS_PPD)",
+                                "edition": "3.1.0"
+                            }
+                        ],
+                        "source": [{
+                                "sourceCitation": {
+                                    "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
+                                }
+                            }, {
+                                "sourceCitation": {
+                                    "title": "BIO_S2_SCS__1S_20251021T231910_20251021T231930_C_G___M___C___T____F156_01_DGWJF5"
+                                }
+                            }, {
+                                "sourceCitation": {
+                                    "title": "BIO_S2_SCS__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DGFQS9"
+                                }
+                            }
+                        ],
+                        "processingInformation": {
+                            "softwareReference": {
+                                "title": "Biomass Stack Processor",
+                                "edition": "4.1.0"
+                            },
+                            "runTimeParameters": "{\"slope\": 14, \"cell_size\": 17}"
+                        },
+                        "output": [{
+                                "sourceCitation": {
+                                    "title": "BIO_S2_STA__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DHQZTP"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "L1A",
+                        "stepDateTime": {
+                            "created": "2025-10-07T09:27:43Z"
+                        },
+                        "processor": [{
+                                "role": "processor",
+                                "party": [{
+                                        "name": "Biomass CPF",
+                                        "type": "CI_Organisation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reference": [{
+                                "title": "BIOMASS L1a/b/c Products Format Specification (BPS_L1_PFD)",
+                                "edition": "1.4.3"
+                            }, {
+                                "title": "BIOMASS Product Performance Description (BPS_PPD)",
+                                "edition": "3.1.0"
+                            }
+                        ],
+                        "source": [{
+                                "sourceCitation": {
+                                    "title": "BIO_S2_RAW__0S_20251006T231912_20251006T232109_C_G___M___C___T____F032_01_DG49VA"
+                                }
+                            }, {
+                                "sourceCitation": {
+                                    "title": "BIO_S2_RAW__0M_20251006T231827_20251006T232124_C_G___M___C___T____F____01_DG4GTW"
+                                }
+                            }
+
+                        ],
+                        "processingInformation": {
+                            "softwareReference": {
+                                "title": "Biomass L1 Processor",
+                                "edition": "4.0.0"
+                            }
+                        },
+                        "output": [{
+                                "sourceCitation": {
+                                    "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "description": "L0",
+                        "stepDateTime": {
+                            "created": "2025-10-07T06:25:58Z"
+                        },
+                        "processor": [{
+                                "role": "processor",
+                                "party": [{
+                                        "name": "PDGS-CPF",
+                                        "type": "CI_Organisation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reference": [{
+                                "title": "BIO-ESA-EOPG-EEGS-TN-0045 - BIOMASS L0 Product Format Definition",
+                                "edition": "N/A"
+                            }
+
+                        ],
+                        "source": [{
+                                "sourceCitation": {
+                                    "title": "BIO_RAWS023_10_20251006T231826_20251006T231933_D20251007T002542_01_DG3TGG"
+                                }
+                            }, {
+                                "sourceCitation": {
+                                    "title": "BIO_RAWS023_10_20251006T231912_20251006T232108_D20251007T002542_01_DG3TGG"
+                                }
+                            }, {
+                                "sourceCitation": {
+                                    "title": "BIO_RAWS023_10_20251006T232047_20251006T232123_D20251007T002542_01_DG3TGG"
+                                }
+                            }
+
+                        ],
+                        "processingInformation": {
+                            "softwareReference": {
+                                "title": "L0PFStep2",
+                                "edition": "01.18"
+                            }
+                        },
+                        "output": [{
+                                "sourceCitation": {
+                                    "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
+                                }
+                            }
+                        ]
+                    }
+
+                ]
+
+            }
+
+        ]
+
+  }
+}
