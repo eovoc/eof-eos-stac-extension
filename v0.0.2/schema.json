@@ -1,6 +1,6 @@
 {
    "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/schema.json",
+  "$id": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.2/schema.json",
   "title": "Data Quality Extension",
   "description": "Data Quality Extension for STAC Items and STAC Collections.",
   "oneOf": [
@@ -150,7 +150,7 @@
         "stac_extensions": {
           "type": "array",
           "contains": {
-            "const": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/schema.json"
+            "const": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.2/schema.json"
           }
         }
       }
@@ -175,14 +175,14 @@
         "dq:quality": {
                    "type": "array",
                     "items": {
-                        "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/dqc.json#/definitions/DataQuality"
+                        "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.2/dqc.json#/definitions/DataQuality"
                     },
                     "uniqueItems": true
         },
         "dq:lineage": {
                    "type": "array",
                     "items": {
-                        "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.1/mdj.json#/definitions/LI_Lineage"
+                        "$ref": "https://eovoc.github.io/eof-eos-stac-extension/v0.0.2/mdj.json#/definitions/LI_Lineage"
                     },
                     "uniqueItems": true
         }
