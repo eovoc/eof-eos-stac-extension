@@ -202,7 +202,7 @@
     },
     "DateOrDateTime": {
       "$comment": "DateOrDateTime",
-      "oneOf": [
+      "anyOf": [
           {
             "type": "string",
             "format": "date-time"
