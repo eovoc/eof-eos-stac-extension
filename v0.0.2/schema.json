@@ -160,7 +160,7 @@
       "anyOf": [
         {   "type": "object",
 			      "required": [
-              "dq:quality", "dq:lineage"
+              
               ]}
        
       ]

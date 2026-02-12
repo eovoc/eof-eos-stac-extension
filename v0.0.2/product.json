@@ -355,210 +355,232 @@
     "eofeos:mission_phase": "COMMISSIONING",
     "updated": "2026-02-05T08:32:57Z",
     "product:acquisition_type": "nominal",
-    "dq:quality": [],
-     "dq:lineage": [
-            {
-                "statement": "Product History Information",
-                "processStep": [{
-                        "description": "L2A",
-                        "stepDateTime": {
-                            "created": "2025-11-20T20:51:15Z"
-                        },
-                        "processor": [{
-                                "role": "processor",
-                                "party": [{
-                                        "name": "Biomass CPF",
-                                         "type": "CI_Organisation"
-                                    }
-                                ]
-                            }
-                        ],
-                        "reference": [{
-                                "title": "BIOMASS Forest Disturbance Product Format Specification (BPS_FD_PFD)",
-                                "edition": "3.2.1"
-                            }, {
-                                "title": "BIOMASS Product Performance Description (BPS_PPD)",
-                                "edition": "3.1.0"
-                            }
-                        ],
-                        "source": [{
-                                "sourceCitation": {
-                                    "title": "BIO_S2_STA__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DHQZTP"
-                                }
-                                
-                            }, {
-                                "sourceCitation": {
-                                    "title": "BIO_S2_STA__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DHQZSU"
-                                }
-                            }, {
-                                "sourceCitation": {
-                                    "title": "BIO_S2_STA__1S_20251021T231910_20251021T231931_C_G___M___C___T____F156_01_DHQZT9"
-                                }
-                            }
-                        ],
-                        "processingInformation": {
-                            "softwareReference": {
-                                "title": "Biomass L2a Processor",
-                                "edition": "4.1.1"
-                            }
-                        },
-                        "output": [{
-                                "sourceCitation": {
-                                    "title": "BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "description": "L1C",
-                        "stepDateTime": {
-                            "created": "2025-11-07T23:27:25Z"
-                        },
-                        "processor": [{
-                                "role": "processor",
-                                "party": [{
-                                        "name": "Biomass CPF",
-                                        "type": "CI_Organisation"
-                                    }
-                                ]
-                            }
-                        ],
-                        "reference": [{
-                                "title": "BIOMASS L1a/b/c Products Format Specification (BPS_L1_PFD) V1.4.3",
-                                "edition": "1.4.3"
-                            }, {
-                                "title": "BIOMASS Product Performance Description (BPS_PPD)",
-                                "edition": "3.1.0"
-                            }
-                        ],
-                        "source": [{
-                                "sourceCitation": {
-                                    "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
-                                }
-                            }, {
-                                "sourceCitation": {
-                                    "title": "BIO_S2_SCS__1S_20251021T231910_20251021T231930_C_G___M___C___T____F156_01_DGWJF5"
-                                }
-                            }, {
-                                "sourceCitation": {
-                                    "title": "BIO_S2_SCS__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DGFQS9"
-                                }
-                            }
-                        ],
-                        "processingInformation": {
-                            "softwareReference": {
-                                "title": "Biomass Stack Processor",
-                                "edition": "4.1.0"
-                            },
-                            "runTimeParameters": "{\"slope\": 14, \"cell_size\": 17}"
-                        },
-                        "output": [{
-                                "sourceCitation": {
-                                    "title": "BIO_S2_STA__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DHQZTP"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "description": "L1A",
-                        "stepDateTime": {
-                            "created": "2025-10-07T09:27:43Z"
-                        },
-                        "processor": [{
-                                "role": "processor",
-                                "party": [{
-                                        "name": "Biomass CPF",
-                                        "type": "CI_Organisation"
-                                    }
-                                ]
-                            }
-                        ],
-                        "reference": [{
-                                "title": "BIOMASS L1a/b/c Products Format Specification (BPS_L1_PFD)",
-                                "edition": "1.4.3"
-                            }, {
-                                "title": "BIOMASS Product Performance Description (BPS_PPD)",
-                                "edition": "3.1.0"
-                            }
-                        ],
-                        "source": [{
-                                "sourceCitation": {
-                                    "title": "BIO_S2_RAW__0S_20251006T231912_20251006T232109_C_G___M___C___T____F032_01_DG49VA"
-                                }
-                            }, {
-                                "sourceCitation": {
-                                    "title": "BIO_S2_RAW__0M_20251006T231827_20251006T232124_C_G___M___C___T____F____01_DG4GTW"
-                                }
-                            }
-
-                        ],
-                        "processingInformation": {
-                            "softwareReference": {
-                                "title": "Biomass L1 Processor",
-                                "edition": "4.0.0"
-                            }
-                        },
-                        "output": [{
-                                "sourceCitation": {
-                                    "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "description": "L0",
-                        "stepDateTime": {
-                            "created": "2025-10-07T06:25:58Z"
-                        },
-                        "processor": [{
-                                "role": "processor",
-                                "party": [{
-                                        "name": "PDGS-CPF",
-                                        "type": "CI_Organisation"
-                                    }
-                                ]
-                            }
-                        ],
-                        "reference": [{
-                                "title": "BIO-ESA-EOPG-EEGS-TN-0045 - BIOMASS L0 Product Format Definition",
-                                "edition": "N/A"
-                            }
-
-                        ],
-                        "source": [{
-                                "sourceCitation": {
-                                    "title": "BIO_RAWS023_10_20251006T231826_20251006T231933_D20251007T002542_01_DG3TGG"
-                                }
-                            }, {
-                                "sourceCitation": {
-                                    "title": "BIO_RAWS023_10_20251006T231912_20251006T232108_D20251007T002542_01_DG3TGG"
-                                }
-                            }, {
-                                "sourceCitation": {
-                                    "title": "BIO_RAWS023_10_20251006T232047_20251006T232123_D20251007T002542_01_DG3TGG"
-                                }
-                            }
-
-                        ],
-                        "processingInformation": {
-                            "softwareReference": {
-                                "title": "L0PFStep2",
-                                "edition": "01.18"
-                            }
-                        },
-                        "output": [{
-                                "sourceCitation": {
-                                    "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
-                                }
-                            }
-                        ]
+    
+    "dq:lineage": [
+    
+    {
+  
+    "processStep": [{
+            "description": "L2A",
+            "stepDateTime": {
+                "created": "2025-11-20T20:51:15Z"
+            },
+            "processor": [{
+                    "role": "processor",
+                    "party": [{
+                            "name": "Biomass CPF",
+                            "type": "CI_Organisation"
+                        }
+                    ]
+                }
+            ],
+            "reference": [{
+                    "title": "BIOMASS Forest Disturbance Product Format Specification (BPS_FD_PFD) V3.2.1",
+                    "edition": "3.2.1"
+                }, {
+                    "title": "BIOMASS Product Performance Description (BPS_PPD)",
+                    "edition": "3.1.0"
+                }
+            ],
+            "source": [{
+                    "sourceCitation": {
+                        "title": "BIO_S2_STA__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DHQZTP"
                     }
+                }, {
+                    "sourceCitation": {
+                        "title": "BIO_S2_STA__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DHQZSU"
+                    }
+                }, {
+                    "sourceCitation": {
+                        "title": "BIO_S2_STA__1S_20251021T231910_20251021T231931_C_G___M___C___T____F156_01_DHQZT9"
+                    }
+                }
+            ],
+            "processingInformation": {
+                "softwareReference": {
+                    "title": "Biomass L2a Processor",
+                    "edition": "4.1.1"
+                },
+                "runTimeParameters": "{\"slope\": 14, \"cell_size\": 17}"
+            },
+            "output": [{
+                    "sourceCitation": {
+                        "title": "BIO_FP_FD__L2A_20251006T231917_20251021T231931_C_G___M___C___T____F156_01_DIEV9F"
+                    }
+                }
+            ]
+        }, {
+            "description": "L1C",
+            "stepDateTime": {
+                "created": "2025-11-07T23:27:25Z"
+            },
+            "processor": [{
+                    "role": "processor",
+                    "party": [{
+                            "name": "Biomass CPF",
+                            "type": "CI_Organisation"
+                        }
+                    ]
+                }
+            ],
+            "reference": [{
+                    "title": "BIOMASS L1a/b/c Products Format Specification (BPS_L1_PFD) V1.4.3",
+                    "edition": "1.4.3"
+                }, {
+                    "title": "BIOMASS Product Performance Description (BPS_PPD)",
+                    "edition": "3.1.0"
+                }
+            ],
+            "source": [{
+                    "sourceCitation": {
+                        "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
+                    }
+                }, {
+                    "sourceCitation": {
+                        "title": "BIO_S2_SCS__1S_20251021T231910_20251021T231930_C_G___M___C___T____F156_01_DGWJF5"
+                    }
+                }, {
+                    "sourceCitation": {
+                        "title": "BIO_S2_SCS__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DGFQS9"
+                    }
+                }
+            ],
+            "processingInformation": {
+                "softwareReference": {
+                    "title": "Biomass Stack Processor",
+                    "edition": "4.1.0"
+                }
+            },
+            "output": [{
+                    "sourceCitation": {
+                        "title": "BIO_S2_STA__1S_20251012T231914_20251012T231935_C_G___M___C___T____F156_01_DHQZTP"
+                    }
+                }
+            ]
+        }, {
+            "description": "L1A",
+            "stepDateTime": {
+                "created": "2025-10-07T09:27:43Z"
+            },
+            "processor": [{
+                    "role": "processor",
+                    "party": [{
+                            "name": "Biomass CPF",
+                            "type": "CI_Organisation"
+                        }
+                    ]
+                }
+            ],
+            "reference": [{
+                    "title": "BIOMASS L1a/b/c Products Format Specification (BPS_L1_PFD)",
+                    "edition": "1.4.3"
+                }, {
+                    "title": "BIOMASS Product Performance Description (BPS_PPD)",
+                    "edition": "3.1.0"
+                }
+            ],
+            "source": [{
+                    "sourceCitation": {
+                        "title": "BIO_S2_RAW__0S_20251006T231912_20251006T232109_C_G___M___C___T____F032_01_DG49VA"
+                    }
+                }, {
+                    "sourceCitation": {
+                        "title": "BIO_S2_RAW__0M_20251006T231827_20251006T232124_C_G___M___C___T____F____01_DG4GTW"
+                    }
+                }
 
-                ]
+            ],
+            "processingInformation": {
+                "softwareReference": {
+                    "title": "Biomass L1 Processor",
+                    "edition": "4.0.0"
+                }
+            },
+            "output": [{
+                    "sourceCitation": {
+                        "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
+                    }
+                }
+            ]
+        }, {
+            "description": "L0",
+            "stepDateTime": {
+                "created": "2025-10-07T06:25:58Z"
+            },
+            "processor": [{
+                    "role": "processor",
+                    "party": [{
+                            "name": "PDGS-CPF",
+                            "type": "CI_Organisation"
+                        }
+                    ]
+                }
+            ],
+            "reference": [{
+                    "title": "BIO-ESA-EOPG-EEGS-TN-0045 - BIOMASS L0 Product Format Definition",
+                    "edition": "N/A"
+                }
 
-            }
+            ],
+            "source": [{
+                    "sourceCitation": {
+                        "title": "BIO_RAWS023_10_20251006T231826_20251006T231933_D20251007T002542_01_DG3TGG"
+                    }
+                }, {
+                    "sourceCitation": {
+                        "title": "BIO_RAWS023_10_20251006T231912_20251006T232108_D20251007T002542_01_DG3TGG"
+                    }
+                }, {
+                    "sourceCitation": {
+                        "title": "BIO_RAWS023_10_20251006T232047_20251006T232123_D20251007T002542_01_DG3TGG"
+                    }
+                }
 
-        ]
+            ],
+            "processingInformation": {
+                "softwareReference": {
+                    "title": "L0PFStep2",
+                    "edition": "01.18"
+                }
+            },
+            "output": [{
+                    "sourceCitation": {
+                        "title": "BIO_S2_SCS__1S_20251006T231917_20251006T231938_C_G___M___C___T____F156_01_DG4IA7"
+                    }
+                }
+            ]
+        }, {
+            "description": "Data acquisition with Biomass P-SAR sensor",
+            "stepDateTime": {
+                "created": "2025-10-06T23:19:33Z"
+            },
+            "processor": [{
+                    "role": "originator",
+                    "party": [{
+                            "name": "P-SAR",
+                            "type": "CI_Individual",
+                            "partyIdentifier": [{
+                                    "code": "https://earth.esa.int/concept/a25a98f2-c03a-51b7-be4a-afab0863186c"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+
+            "output": [{
+                    "sourceCitation": {
+                        "title": "BIO_RAWS023_10_20251006T231826_20251006T231933_D20251007T002542_01_DG3TGG"
+                    }
+                }
+            ]
+        }
+
+    ]
+
+}
+]
+   
 
   }
 }
